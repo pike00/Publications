@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>32559352</Id>
+	<Item Name="PubDate" Type="Date">2020 Jun 19</Item>
+	<Item Name="EPubDate" Type="Date">2020 Jun 19</Item>
+	<Item Name="Source" Type="String">Neurourol Urodyn</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Clements MB</Item>
+		<Item Name="Author" Type="String">Zillioux JM</Item>
+		<Item Name="Author" Type="String">William Pike C</Item>
+		<Item Name="Author" Type="String">Rapp DE</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Rapp DE</Item>
+	<Item Name="Title" Type="String">Has the use of preoperative urodynamics for stress urinary incontinence surgery changed following the VALUE study?</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String"></Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8303326</Item>
+	<Item Name="ISSN" Type="String">0733-2467</Item>
+	<Item Name="ESSN" Type="String">1520-6777</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">32559352</Item>
+		<Item Name="doi" Type="String">10.1002/nau.24430</Item>
+		<Item Name="rid" Type="String">32559352</Item>
+		<Item Name="eid" Type="String">32559352</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1002/nau.24430</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2020/04/30 00:00</Item>
+		<Item Name="accepted" Type="Date">2020/06/02 00:00</Item>
+		<Item Name="entrez" Type="Date">2020/06/20 06:00</Item>
+		<Item Name="pubmed" Type="Date">2020/06/20 06:00</Item>
+		<Item Name="medline" Type="Date">2020/06/20 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Neurourology and urodynamics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1002/nau.24430</Item>
+	<Item Name="SO" Type="String">2020 Jun 19;</Item>
+</DocSum>
+
+</eSummaryResult>
