@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>31980841</Id>
+	<Item Name="PubDate" Type="Date">2020 Jun</Item>
+	<Item Name="EPubDate" Type="Date">2020 Jan 24</Item>
+	<Item Name="Source" Type="String">Int Urogynecol J</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Zillioux J</Item>
+		<Item Name="Author" Type="String">Clements M</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Rapp D</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Rapp D</Item>
+	<Item Name="Title" Type="String">Opioid prescription use in patients with interstitial cystitis.</Item>
+	<Item Name="Volume" Type="String">31</Item>
+	<Item Name="Issue" Type="String">6</Item>
+	<Item Name="Pages" Type="String">1215-1220</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101567041</Item>
+	<Item Name="ISSN" Type="String">0937-3462</Item>
+	<Item Name="ESSN" Type="String">1433-3023</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - in process</Item>
+	<Item Name="PubStatus" Type="String">ppublish+epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">31980841</Item>
+		<Item Name="doi" Type="String">10.1007/s00192-019-04214-2</Item>
+		<Item Name="pii" Type="String">10.1007/s00192-019-04214-2</Item>
+		<Item Name="rid" Type="String">31980841</Item>
+		<Item Name="eid" Type="String">31980841</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1007/s00192-019-04214-2</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2019/10/18 00:00</Item>
+		<Item Name="accepted" Type="Date">2019/12/12 00:00</Item>
+		<Item Name="pubmed" Type="Date">2020/01/26 06:00</Item>
+		<Item Name="medline" Type="Date">2020/01/26 06:00</Item>
+		<Item Name="entrez" Type="Date">2020/01/26 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">International urogynecology journal</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1007/s00192-019-04214-2</Item>
+	<Item Name="SO" Type="String">2020 Jun;31(6):1215-1220</Item>
+</DocSum>
+
+</eSummaryResult>
