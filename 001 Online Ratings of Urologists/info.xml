@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>31267982</Id>
+	<Item Name="PubDate" Type="Date">2019 Jul 2</Item>
+	<Item Name="EPubDate" Type="Date">2019 Jul 2</Item>
+	<Item Name="Source" Type="String">J Med Internet Res</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Zillioux J</Item>
+		<Item Name="Author" Type="String">Rapp D</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Rapp D</Item>
+	<Item Name="Title" Type="String">Online Ratings of Urologists: Comprehensive Analysis.</Item>
+	<Item Name="Volume" Type="String">21</Item>
+	<Item Name="Issue" Type="String">7</Item>
+	<Item Name="Pages" Type="String">e12436</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">100959882</Item>
+	<Item Name="ISSN" Type="String">1439-4456</Item>
+	<Item Name="ESSN" Type="String">1438-8871</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">31267982</Item>
+		<Item Name="pii" Type="String">v21i7e12436</Item>
+		<Item Name="doi" Type="String">10.2196/12436</Item>
+		<Item Name="pmc" Type="String">PMC6632102</Item>
+		<Item Name="rid" Type="String">31267982</Item>
+		<Item Name="eid" Type="String">31267982</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC6632102;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.2196/12436</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2018/10/06 00:00</Item>
+		<Item Name="accepted" Type="Date">2019/05/02 00:00</Item>
+		<Item Name="revised" Type="Date">2019/03/23 00:00</Item>
+		<Item Name="entrez" Type="Date">2019/07/04 06:00</Item>
+		<Item Name="pubmed" Type="Date">2019/07/04 06:00</Item>
+		<Item Name="medline" Type="Date">2020/04/24 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">1</Item>
+	<Item Name="FullJournalName" Type="String">Journal of medical Internet research</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.2196/12436</Item>
+	<Item Name="SO" Type="String">2019 Jul 2;21(7):e12436</Item>
+</DocSum>
+
+</eSummaryResult>
