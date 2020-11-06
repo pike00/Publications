@@ -12,3 +12,13 @@ This repository is a complete list of all publications and abstracts that I have
 
 
 ## Currently in Submission
+
+
+
+### Personal Note
+
+To download info for each paper, run the following command, filling in the Pubmed ID as appropriate: 
+
+```
+curl "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={Pubmed ID}" > info.xml
+```
