@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>33234007</Id>
+	<Item Name="PubDate" Type="Date">2020 Nov 25</Item>
+	<Item Name="EPubDate" Type="Date">2020 Nov 25</Item>
+	<Item Name="Source" Type="String">J Intensive Care Med</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Sonti R</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Cobb N</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Cobb N</Item>
+	<Item Name="Title" Type="String">Responsiveness of Inhaled Epoprostenol in Respiratory Failure due to COVID-19.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">885066620976525</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8610344</Item>
+	<Item Name="ISSN" Type="String">0885-0666</Item>
+	<Item Name="ESSN" Type="String">1525-1489</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">33234007</Item>
+		<Item Name="doi" Type="String">10.1177/0885066620976525</Item>
+		<Item Name="rid" Type="String">33234007</Item>
+		<Item Name="eid" Type="String">33234007</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1177/0885066620976525</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2020/11/25 05:30</Item>
+		<Item Name="pubmed" Type="Date">2020/11/26 06:00</Item>
+		<Item Name="medline" Type="Date">2020/11/26 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Journal of intensive care medicine</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1177/0885066620976525</Item>
+	<Item Name="SO" Type="String">2020 Nov 25;:885066620976525</Item>
+</DocSum>
+
+</eSummaryResult>
