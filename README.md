@@ -8,6 +8,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Opioid prescription use in patients with interstitial cystitis](002 IC Opioids/Opioid prescription use in interstitial cystitis.pdf)
 - [Has the use of preoperative urodynamics for stress urinary incontinence surgery changed following the VALUE study?](003 VALUE Study/Pre-operative Urodynamics for Stress Urinary Incontinence.pdf)
 - [Responsiveness of Inhaled Epoprostenol in Respiratory Failure due to COVID-19](004 Epoprostenol COVID/Responsiveness of Inhaled Epoprostenol in COVID Respiratory Failure.pdf)
+- [Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19](005 RRT COVID/Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19.pdf)
 
 ## Abstracts
 
