@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>33726959</Id>
+	<Item Name="PubDate" Type="Date">2021 Feb 18</Item>
+	<Item Name="EPubDate" Type="Date">2021 Feb 18</Item>
+	<Item Name="Source" Type="String">Med Intensiva</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Burke E</Item>
+		<Item Name="Author" Type="String">Haber E</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Sonti R</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Sonti R</Item>
+	<Item Name="Title" Type="String">Outcomes of renal replacement therapy in the critically ill with COVID-19.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String"></Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+		<Item Name="Lang" Type="String">Spanish</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">9207689</Item>
+	<Item Name="ISSN" Type="String">0210-5691</Item>
+	<Item Name="ESSN" Type="String">1578-6749</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">33726959</Item>
+		<Item Name="pii" Type="String">S0210-5691(21)00020-6</Item>
+		<Item Name="doi" Type="String">10.1016/j.medin.2021.02.004</Item>
+		<Item Name="pmc" Type="String">PMC7891048</Item>
+		<Item Name="rid" Type="String">33726959</Item>
+		<Item Name="eid" Type="String">33726959</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC7891048;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1016/j.medin.2021.02.004</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2020/09/28 00:00</Item>
+		<Item Name="revised" Type="Date">2020/12/24 00:00</Item>
+		<Item Name="accepted" Type="Date">2021/02/09 00:00</Item>
+		<Item Name="entrez" Type="Date">2021/03/17 06:01</Item>
+		<Item Name="pubmed" Type="Date">2021/03/18 06:00</Item>
+		<Item Name="medline" Type="Date">2021/03/18 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Medicina intensiva</Item>
+	<Item Name="ELocationID" Type="String">pii: S0210-5691(21)00020-6. doi: 10.1016/j.medin.2021.02.004</Item>
+	<Item Name="SO" Type="String">2021 Feb 18;</Item>
+</DocSum>
+
+</eSummaryResult>
