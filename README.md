@@ -12,7 +12,7 @@ This repository is a complete list of all publications and abstracts that I have
 
 ## Abstracts
 
-- [Analysis of Online Urologist Ratings: Does Subspecialty Influence Mean Rating?]("Abstracts/001  Analysis of Online Urologist Ratings Subspecialty Influence/Analysis of Online Urologist Ratings - Does Subspecialty Influence Mean Rating.pdf")
+- [Analysis of Online Urologist Ratings: Does Subspecialty Influence Mean Rating?]("Abstracts/001 Analysis of Online Urologist Ratings Subspecialty Influence/Analysis of Online Urologist Ratings - Does Subspecialty Influence Mean Rating.pdf")
 - [Effect of Body Mass Index on Recurrence Following Urethroplasty]("Abstracts/002 Effect of BMI on Recurrence of Urethroplasty/Effect of BMI on Recurrence Following Urethroplasty.pdf")
 - [Discrete Event Simulation of a Dedicated Procedure Day in Urology Clinics]("Abstracts/003 Discrete Event Simulation of Procedure Day in Urology Clinic/Discrete Event Simulation of a dedicated procedure day in Urology Clinics.pdf")
 - [Has the use of pre‐operative urodynamics for stress urinary incontinence surgery changed following the value study?]("Abstracts/004 Pre-operative Urodynamics for SUI After value study/Has the use of pre-operative urodynamics for stress urinary incontinence changed following hte value study.pdf")
