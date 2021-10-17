@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>30913311</Id>
+	<Item Name="PubDate" Type="Date">2019 Feb</Item>
+	<Item Name="EPubDate" Type="Date"></Item>
+	<Item Name="Source" Type="String">Neurourol Urodyn</Item>
+	<Item Name="AuthorList" Type="List"></Item>
+	<Item Name="LastAuthor" Type="String"></Item>
+	<Item Name="Title" Type="String">Society for Urodynamics, Female Pelvic Medicine &amp;amp; Urogenital Reconstruction 2019 Winter Meeting, February 26-March 2, 2019, InterContinental Hotel, Miami, Florida.</Item>
+	<Item Name="Volume" Type="String">38 Suppl 1</Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">S6-S255</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8303326</Item>
+	<Item Name="ISSN" Type="String">0733-2467</Item>
+	<Item Name="ESSN" Type="String">1520-6777</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">30913311</Item>
+		<Item Name="doi" Type="String">10.1002/nau.23949</Item>
+		<Item Name="rid" Type="String">30913311</Item>
+		<Item Name="eid" Type="String">30913311</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1002/nau.23949</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2019/03/27 06:00</Item>
+		<Item Name="pubmed" Type="Date">2019/03/27 06:00</Item>
+		<Item Name="medline" Type="Date">2019/03/27 06:01</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">0</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Neurourology and urodynamics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1002/nau.23949</Item>
+	<Item Name="SO" Type="String">2019 Feb;38 Suppl 1:S6-S255</Item>
+</DocSum>
+
+</eSummaryResult>

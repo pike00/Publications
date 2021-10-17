@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>30281014</Id>
+	<Item Name="PubDate" Type="Date">2018 Oct</Item>
+	<Item Name="EPubDate" Type="Date"></Item>
+	<Item Name="Source" Type="String">Can J Urol</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">A UA</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">A UA</Item>
+	<Item Name="Title" Type="String">Abstracts of the Mid-Atlantic Section of the American Urological Association Annual Meeting October 4 - 7, 2018 Washington, DC.</Item>
+	<Item Name="Volume" Type="String">25</Item>
+	<Item Name="Issue" Type="String">5</Item>
+	<Item Name="Pages" Type="String">9534-9567</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">9515842</Item>
+	<Item Name="ISSN" Type="String">1195-9479</Item>
+	<Item Name="ESSN" Type="String"></Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">30281014</Item>
+		<Item Name="rid" Type="String">30281014</Item>
+		<Item Name="eid" Type="String">30281014</Item>
+	</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2018/10/04 06:00</Item>
+		<Item Name="pubmed" Type="Date">2018/10/04 06:00</Item>
+		<Item Name="medline" Type="Date">2018/10/04 06:01</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">0</Item>
+	<Item Name="PmcRefCount" Type="Integer">1</Item>
+	<Item Name="FullJournalName" Type="String">The Canadian journal of urology</Item>
+	<Item Name="ELocationID" Type="String"></Item>
+	<Item Name="SO" Type="String">2018 Oct;25(5):9534-9567</Item>
+</DocSum>
+
+</eSummaryResult>
