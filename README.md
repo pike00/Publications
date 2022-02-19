@@ -8,7 +8,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Opioid prescription use in patients with interstitial cystitis](Publications/002 IC Opioids/Opioid prescription use in interstitial cystitis.pdf)
 - [Has the use of preoperative urodynamics for stress urinary incontinence surgery changed following the VALUE study?](Publications/003 VALUE Study/Pre-operative Urodynamics for Stress Urinary Incontinence.pdf)
 - [Responsiveness of Inhaled Epoprostenol in Respiratory Failure due to COVID-19](Publications/004 Epoprostenol COVID/Responsiveness of Inhaled Epoprostenol in COVID Respiratory Failure.pdf)
-- [Analysis of Online Urologist Ratings: Are Rating Differences Associated With Subspecialty?]("Publications/005 Online Rating Urologist by Subspecialty/Analysis of Online Urologist Ratings Are Rating Differences Associated With Subspecialty.pdf")
+- [Analysis of Online Urologist Ratings: Are Rating Differences Associated With Subspecialty?](Publications/005 Online Rating Urologist by Subspecialty/Analysis of Online Urologist Ratings Are Rating Differences Associated With Subspecialty.pdf)
 - [Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19](Publications/005 RRT COVID/Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19.pdf)
 
 ## Abstracts
