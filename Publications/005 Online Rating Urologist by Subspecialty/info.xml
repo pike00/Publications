@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>33457546</Id>
+	<Item Name="PubDate" Type="Date">2020 Dec</Item>
+	<Item Name="EPubDate" Type="Date">2020 Aug 24</Item>
+	<Item Name="Source" Type="String">J Patient Exp</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Zillioux J</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Sharma D</Item>
+		<Item Name="Author" Type="String">Rapp DE</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Rapp DE</Item>
+	<Item Name="Title" Type="String">Analysis of Online Urologist Ratings: Are Rating Differences Associated With Subspecialty?</Item>
+	<Item Name="Volume" Type="String">7</Item>
+	<Item Name="Issue" Type="String">6</Item>
+	<Item Name="Pages" Type="String">1062-1067</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101688338</Item>
+	<Item Name="ISSN" Type="String">2374-3735</Item>
+	<Item Name="ESSN" Type="String">2374-3743</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String">ppublish+epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">33457546</Item>
+		<Item Name="doi" Type="String">10.1177/2374373520951901</Item>
+		<Item Name="pii" Type="String">10.1177_2374373520951901</Item>
+		<Item Name="pmc" Type="String">PMC7786750</Item>
+		<Item Name="rid" Type="String">33457546</Item>
+		<Item Name="eid" Type="String">33457546</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC7786750;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1177/2374373520951901</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2021/01/18 05:33</Item>
+		<Item Name="pubmed" Type="Date">2021/01/19 06:00</Item>
+		<Item Name="medline" Type="Date">2021/01/19 06:01</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Journal of patient experience</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1177/2374373520951901</Item>
+	<Item Name="SO" Type="String">2020 Dec;7(6):1062-1067</Item>
+</DocSum>
+
+</eSummaryResult>
