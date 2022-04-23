@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>35195460</Id>
+	<Item Name="PubDate" Type="Date">2022 Feb 23</Item>
+	<Item Name="EPubDate" Type="Date">2022 Feb 23</Item>
+	<Item Name="Source" Type="String">J Intensive Care Med</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Bell J</Item>
+		<Item Name="Author" Type="String">William Pike C</Item>
+		<Item Name="Author" Type="String">Kreisel C</Item>
+		<Item Name="Author" Type="String">Sonti R</Item>
+		<Item Name="Author" Type="String">Cobb N</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Cobb N</Item>
+	<Item Name="Title" Type="String">Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">8850666221081757</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8610344</Item>
+	<Item Name="ISSN" Type="String">0885-0666</Item>
+	<Item Name="ESSN" Type="String">1525-1489</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">35195460</Item>
+		<Item Name="doi" Type="String">10.1177/08850666221081757</Item>
+		<Item Name="pmc" Type="String">PMC8872814</Item>
+		<Item Name="rid" Type="String">35195460</Item>
+		<Item Name="eid" Type="String">35195460</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC8872814;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1177/08850666221081757</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2022/02/23 12:19</Item>
+		<Item Name="pubmed" Type="Date">2022/02/24 06:00</Item>
+		<Item Name="medline" Type="Date">2022/02/24 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Journal of intensive care medicine</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1177/08850666221081757</Item>
+	<Item Name="SO" Type="String">2022 Feb 23;:8850666221081757</Item>
+</DocSum>
+
+</eSummaryResult>
