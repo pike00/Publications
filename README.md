@@ -12,7 +12,6 @@ This repository is a complete list of all publications and abstracts that I have
 - [Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19](Publications/006 RRT COVID/Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19.pdf)
 - [The Case of Hannah Capes: How Much Does Consciousness Matter?](Publications/007 Capes Paper/The Case of Hannah Capes.pdf)
 - [Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19](Publications/008 Prone COVID/Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19.pdf)
-- 
 
 ## Abstracts
 
