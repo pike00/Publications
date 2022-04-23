@@ -10,6 +10,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Responsiveness of Inhaled Epoprostenol in Respiratory Failure due to COVID-19](Publications/004 Epoprostenol COVID/Responsiveness of Inhaled Epoprostenol in COVID Respiratory Failure.pdf)
 - [Analysis of Online Urologist Ratings: Are Rating Differences Associated With Subspecialty?](Publications/005 Online Rating Urologist by Subspecialty/Analysis of Online Urologist Ratings Are Rating Differences Associated With Subspecialty.pdf)
 - [Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19](Publications/006 RRT COVID/Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19.pdf)
+- [The Case of Hannah Capes: How Much Does Consciousness Matter?](Publications/007 Capes Paper/The Case of Hannah Capes.pdf)
 
 ## Abstracts
 
