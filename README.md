@@ -22,13 +22,3 @@ This repository is a complete list of all publications and abstracts that I have
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
 
 <!-- ## Currently in Submission -->
-
-
-
-### Personal Note
-
-To download info for each paper, run the following command, filling in the Pubmed ID as appropriate:
-
-```
-curl "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={Pubmed ID}" > info.xml
-```
