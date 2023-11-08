@@ -21,4 +21,9 @@ This repository is a complete list of all publications and abstracts that I have
 - [Has the use of pre‐operative urodynamics for stress urinary incontinence surgery changed following the value study?](<Abstracts/004 Pre-operative Urodynamics for SUI After value study/Has the use of pre-operative urodynamics for stress urinary incontinence changed following hte value study.pdf>)
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
 
+
+## Non-Published Abstracts, Posters, etc.
+
+- [A Single-site Retrospective Cohort Study of Oral & Dental Disease Associated with Buprenorphine Use in Patients with Opioid Use Disorder](<Unpublished/001 Single-Site Retrospective Cohort Study of Oral and Dental Disease Associated with Buprenorphine Use.pdf>)
+
 <!-- ## Currently in Submission -->
