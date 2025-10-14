@@ -12,6 +12,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19](<Publications/006 RRT COVID/Outcomes of Renal Replacement Therapy in the Critically Ill with COVID-19.pdf>)
 - [The Case of Hannah Capes: How Much Does Consciousness Matter?](<Publications/007 Capes Paper/The Case of Hannah Capes.pdf>)
 - [Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19](<Publications/008 Prone COVID/Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19.pdf>)
+- [Increased Risks of Major Cardiac Adverse Events in Stimulant Use Disorder as Compared With Other Substance Use Disorders: A Propensity-score Matching Cohort Study](<Publications/010 MACE Stimulant Use/Increased Risks of Major Cardiac Adverse Events in Stimulant Use Disorders.pdf>)
 
 ## Abstracts
 
@@ -20,7 +21,6 @@ This repository is a complete list of all publications and abstracts that I have
 - [Discrete Event Simulation of a Dedicated Procedure Day in Urology Clinics](<Abstracts/003 Discrete Event Simulation of Procedure Day in Urology Clinic/Discrete Event Simulation of a dedicated procedure day in Urology Clinics.pdf>)
 - [Has the use of pre‐operative urodynamics for stress urinary incontinence surgery changed following the value study?](<Abstracts/004 Pre-operative Urodynamics for SUI After value study/Has the use of pre-operative urodynamics for stress urinary incontinence changed following hte value study.pdf>)
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
-
 
 ## Non-Published Abstracts, Posters, etc.
 

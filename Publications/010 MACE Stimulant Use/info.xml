@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>39961096</Id>
+	<Item Name="PubDate" Type="Date">2025 Sep-Oct 01</Item>
+	<Item Name="EPubDate" Type="Date">2025 Feb 17</Item>
+	<Item Name="Source" Type="String">J Addict Med</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Garel N</Item>
+		<Item Name="Author" Type="String">Greenway KT</Item>
+		<Item Name="Author" Type="String">Lavin P</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Hyde R</Item>
+		<Item Name="Author" Type="String">Jutras-Aswad D</Item>
+		<Item Name="Author" Type="String">Tate SD</Item>
+		<Item Name="Author" Type="String">Lembke A</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Lembke A</Item>
+	<Item Name="Title" Type="String">Increased Risks of Major Cardiac Adverse Events in Stimulant Use Disorder as Compared With Other Substance Use Disorders: A Propensity-score Matching Cohort Study.</Item>
+	<Item Name="Volume" Type="String">19</Item>
+	<Item Name="Issue" Type="String">5</Item>
+	<Item Name="Pages" Type="String">599-604</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101306759</Item>
+	<Item Name="ISSN" Type="String">1932-0620</Item>
+	<Item Name="ESSN" Type="String">1935-3227</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish+epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">39961096</Item>
+		<Item Name="doi" Type="String">10.1097/ADM.0000000000001461</Item>
+		<Item Name="pii" Type="String">01271255-990000000-00458</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1097/ADM.0000000000001461</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2024/07/29 00:00</Item>
+		<Item Name="accepted" Type="Date">2024/12/31 00:00</Item>
+		<Item Name="medline" Type="Date">2025/10/01 18:28</Item>
+		<Item Name="pubmed" Type="Date">2025/02/17 18:21</Item>
+		<Item Name="entrez" Type="Date">2025/02/17 16:43</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Journal of addiction medicine</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1097/ADM.0000000000001461</Item>
+	<Item Name="SO" Type="String">2025 Sep-Oct 01;19(5):599-604</Item>
+</DocSum>
+
+</eSummaryResult>
