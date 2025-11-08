@@ -14,6 +14,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19](<Publications/008 Prone COVID/Predicting Impact of Prone Position on Oxygenation in Mechanically Ventilated Patients with COVID-19.pdf>)
 - [Increased Risks of Major Cardiac Adverse Events in Stimulant Use Disorder as Compared With Other Substance Use Disorders: A Propensity-score Matching Cohort Study](<Publications/010 MACE Stimulant Use/Increased Risks of Major Cardiac Adverse Events in Stimulant Use Disorders.pdf>)
 - [Major depressive disorder in multiple sclerosis associated with differences in disease modifying therapy and demographics](Publications/010 MDD in MS/Major depressive disorder in multiple sclerosis associated with differences in disease modifying therapy and demographics.pdf)
+- [Comparison of Fracture Risk Following Semaglutide Treatment vs. Sleeve Gastrectomy](Publications/012 Fracture Risk GLP v Sleeve Gastrectomy/Comparison of Fracture Risk Following Semaglutide Treatment vs. Sleeve Gastrectomy.pdf)
 
 ## Abstracts
 
