@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>41031194</Id>
+	<Item Name="PubDate" Type="Date">2025</Item>
+	<Item Name="EPubDate" Type="Date">2025 Sep 15</Item>
+	<Item Name="Source" Type="String">Front Neurol</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Lee NJ</Item>
+		<Item Name="Author" Type="String">Hui G</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Galetta K</Item>
+		<Item Name="Author" Type="String">Kipp LB</Item>
+		<Item Name="Author" Type="String">Dunn J</Item>
+		<Item Name="Author" Type="String">Le S</Item>
+		<Item Name="Author" Type="String">Folmsbee SS</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Folmsbee SS</Item>
+	<Item Name="Title" Type="String">Major depressive disorder in multiple sclerosis associated with differences in disease modifying therapy and demographics.</Item>
+	<Item Name="Volume" Type="String">16</Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">1663778</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101546899</Item>
+	<Item Name="ISSN" Type="String">1664-2295</Item>
+	<Item Name="ESSN" Type="String">1664-2295</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String"></Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">41031194</Item>
+		<Item Name="pmc" Type="String">PMC12477856</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC12477856;</Item>
+		<Item Name="doi" Type="String">10.3389/fneur.2025.1663778</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.3389/fneur.2025.1663778</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2025/07/10 00:00</Item>
+		<Item Name="accepted" Type="Date">2025/08/31 00:00</Item>
+		<Item Name="medline" Type="Date">2025/10/01 12:02</Item>
+		<Item Name="pubmed" Type="Date">2025/10/01 12:01</Item>
+		<Item Name="entrez" Type="Date">2025/10/01 05:09</Item>
+		<Item Name="pmc-release" Type="Date">2025/09/15 00:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">34</Item>
+	<Item Name="FullJournalName" Type="String">Frontiers in neurology</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.3389/fneur.2025.1663778</Item>
+	<Item Name="SO" Type="String">2025;16:1663778</Item>
+</DocSum>
+
+</eSummaryResult>
