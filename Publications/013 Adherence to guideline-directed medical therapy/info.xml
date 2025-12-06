@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>41323514</Id>
+	<Item Name="PubDate" Type="Date">2025 Dec</Item>
+	<Item Name="EPubDate" Type="Date">2025 Nov 10</Item>
+	<Item Name="Source" Type="String">Am Heart J Plus</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Liu X</Item>
+		<Item Name="Author" Type="String">Choi CHJ</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Hui G</Item>
+		<Item Name="Author" Type="String">Muralidharan J</Item>
+		<Item Name="Author" Type="String">Nallamshetty S</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Nallamshetty S</Item>
+	<Item Name="Title" Type="String">Impact of sustained adherence to guideline-directed medical therapy on clinical outcomes in older adults with new-onset heart failure with reduced ejection fraction.</Item>
+	<Item Name="Volume" Type="String">60</Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">100670</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101779333</Item>
+	<Item Name="ISSN" Type="String"></Item>
+	<Item Name="ESSN" Type="String">2666-6022</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String"></Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">41323514</Item>
+		<Item Name="pmc" Type="String">PMC12661418</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC12661418;</Item>
+		<Item Name="doi" Type="String">10.1016/j.ahjo.2025.100670</Item>
+		<Item Name="pii" Type="String">S2666-6022(25)00173-9</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1016/j.ahjo.2025.100670</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2025/04/10 00:00</Item>
+		<Item Name="revised" Type="Date">2025/09/20 00:00</Item>
+		<Item Name="accepted" Type="Date">2025/11/06 00:00</Item>
+		<Item Name="medline" Type="Date">2025/12/01 12:29</Item>
+		<Item Name="pubmed" Type="Date">2025/12/01 12:28</Item>
+		<Item Name="entrez" Type="Date">2025/12/01 06:36</Item>
+		<Item Name="pmc-release" Type="Date">2025/11/10 00:00</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">0</Item>
+	<Item Name="PmcRefCount" Type="Integer">8</Item>
+	<Item Name="FullJournalName" Type="String">American heart journal plus : cardiology research and practice</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1016/j.ahjo.2025.100670</Item>
+	<Item Name="SO" Type="String">2025 Dec;60:100670</Item>
+</DocSum>
+
+</eSummaryResult>
