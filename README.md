@@ -16,6 +16,8 @@ This repository is a complete list of all publications and abstracts that I have
 - [Major depressive disorder in multiple sclerosis associated with differences in disease modifying therapy and demographics](<Publications/010 MDD in MS/Major depressive disorder in multiple sclerosis associated with differences in disease modifying therapy and demographics.pdf>)
 - [Comparison of Fracture Risk Following Semaglutide Treatment vs. Sleeve Gastrectomy](<Publications/012 Fracture Risk GLP v Sleeve Gastrectomy/Comparison of Fracture Risk Following Semaglutide Treatment vs. Sleeve Gastrectomy.pdf>)
 - [Impact of sustained adherence to guideline-directed medical therapy on clinical outcomes in older adults with new-onset heart failure with reduced ejection fraction](<Publications/013 Adherence to guideline-directed medical therapy/Impact of sustained adherence to guideline-directed medical therapy on clinical outcomes in older adults with new-onset heart failure with reduced ejection fraction.pdf>)
+- [Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal
+Prescriptions Than In-Person Care: a retrospective cohort study](<Publications/014 Telemedicine Visits for New Onycomycosis Diangoses/Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal.pdf>)
 
 ## Abstracts
 
