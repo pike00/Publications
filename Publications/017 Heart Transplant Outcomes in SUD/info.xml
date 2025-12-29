@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>41026891</Id>
+	<Item Name="PubDate" Type="Date">2025 Sep 30</Item>
+	<Item Name="EPubDate" Type="Date">2025 Sep 30</Item>
+	<Item Name="Source" Type="String">Eur Heart J Qual Care Clin Outcomes</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Elkrief K</Item>
+		<Item Name="Author" Type="String">Lavin P</Item>
+		<Item Name="Author" Type="String">Greenway KT</Item>
+		<Item Name="Author" Type="String">Tate S</Item>
+		<Item Name="Author" Type="String">Hussain F</Item>
+		<Item Name="Author" Type="String">Pike W</Item>
+		<Item Name="Author" Type="String">Trepanier A</Item>
+		<Item Name="Author" Type="String">Gavin H</Item>
+		<Item Name="Author" Type="String">Lespérance P</Item>
+		<Item Name="Author" Type="String">Kudrina I</Item>
+		<Item Name="Author" Type="String">Dubreucq S</Item>
+		<Item Name="Author" Type="String">Ostacher M</Item>
+		<Item Name="Author" Type="String">Jutras-Aswad D</Item>
+		<Item Name="Author" Type="String">Lembke A</Item>
+		<Item Name="Author" Type="String">Garel N</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Garel N</Item>
+	<Item Name="Title" Type="String">Heart Transplant Outcomes in Patients with Substance Use Disorder History: A Nationwide Cohort Study Using High-Dimensional Propensity Score Matching.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String"></Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101677796</Item>
+	<Item Name="ISSN" Type="String"></Item>
+	<Item Name="ESSN" Type="String">2058-1742</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">41026891</Item>
+		<Item Name="doi" Type="String">10.1093/ehjqcco/qcaf117</Item>
+		<Item Name="pii" Type="String">8269267</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1093/ehjqcco/qcaf117</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2025/06/26 00:00</Item>
+		<Item Name="revised" Type="Date">2025/08/13 00:00</Item>
+		<Item Name="accepted" Type="Date">2025/09/09 00:00</Item>
+		<Item Name="medline" Type="Date">2025/09/30 18:28</Item>
+		<Item Name="pubmed" Type="Date">2025/09/30 18:28</Item>
+		<Item Name="entrez" Type="Date">2025/09/30 14:42</Item>
+	</Item>
+	<Item Name="References" Type="List">
+		<Item Name="Comment in" Type="String">Eur Heart J Qual Care Clin Outcomes. 2025 Nov 07:qcaf139. doi: 10.1093/ehjqcco/qcaf139. PMID: 41206687</Item>
+	</Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">European heart journal. Quality of care &amp; clinical outcomes</Item>
+	<Item Name="ELocationID" Type="String">pii: qcaf117. doi: 10.1093/ehjqcco/qcaf117</Item>
+	<Item Name="SO" Type="String">2025 Sep 30;</Item>
+</DocSum>
+
+</eSummaryResult>

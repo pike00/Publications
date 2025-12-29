@@ -20,6 +20,7 @@ This repository is a complete list of all publications and abstracts that I have
 Prescriptions Than In-Person Care: a retrospective cohort study](<Publications/014 Telemedicine Visits for New Onycomycosis Diangoses/Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal.pdf>)
 - [Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough?](<Publications/015 Screening for MetALD/Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough.pdf>)
 - [Estrogen exposure from modern contraceptives and vascular risk in women with migraine: A nationwide electronic medical record database study](<Publications/016 Estrogen Exposure from Contraceptives in Migraine/Estrogen exposure from modern contraceptives and vascular risk in women with migraine.pdf>)
+- [Heart Transplant Outcomes in Patients with Substance Use Disorder History: A Nation-wide Cohort Study using High-Dimensional Propensity Score Matching](<Publications/017 Heart Transplant Outcomes in SUD/Heart transplant outcomes in patients with substance use disorder history- a nationwide cohort study using high-dimensional propensity score matching.pdf>)
 
 ## Abstracts, Posters, and Presentations
 
