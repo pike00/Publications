@@ -28,6 +28,7 @@ Prescriptions Than In-Person Care: a retrospective cohort study](<Publications/0
 - [Discrete Event Simulation of a Dedicated Procedure Day in Urology Clinics](<Abstracts/003 Discrete Event Simulation of Procedure Day in Urology Clinic/Discrete Event Simulation of a dedicated procedure day in Urology Clinics.pdf>)
 - [Has the use of pre‐operative urodynamics for stress urinary incontinence surgery changed following the value study?](<Abstracts/004 Pre-operative Urodynamics for SUI After value study/Has the use of pre-operative urodynamics for stress urinary incontinence changed following hte value study.pdf>)
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
+- [Early identification of patients likely to benefit from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data](<Abstracts/006 PNH Model/Early identication of patients likely to benet from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data.pdf>)
 
 ## Non-Published Abstracts, Posters, etc.
 
