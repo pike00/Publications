@@ -19,6 +19,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal
 Prescriptions Than In-Person Care: a retrospective cohort study](<Publications/014 Telemedicine Visits for New Onycomycosis Diangoses/Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal.pdf>)
 - [Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough?](<Publications/015 Screening for MetALD/Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough.pdf>)
+- [Estrogen exposure from modern contraceptives and vascular risk in women with migraine: A nationwide electronic medical record database study](<Publications/016 Estrogen Exposure from Contraceptives in Migraine/Estrogen exposure from modern contraceptives and vascular risk in women with migraine.pdf>)
 
 ## Abstracts
 
