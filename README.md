@@ -18,6 +18,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Impact of sustained adherence to guideline-directed medical therapy on clinical outcomes in older adults with new-onset heart failure with reduced ejection fraction](<Publications/013 Adherence to guideline-directed medical therapy/Impact of sustained adherence to guideline-directed medical therapy on clinical outcomes in older adults with new-onset heart failure with reduced ejection fraction.pdf>)
 - [Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal
 Prescriptions Than In-Person Care: a retrospective cohort study](<Publications/014 Telemedicine Visits for New Onycomycosis Diangoses/Telemedicine Visits for New Onychomycosis Diagnoses Result in Fewer Antifungal.pdf>)
+- [Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough?](<Publications/015 Screening for MetALD/Screening for Metabolic Dysfunction–Associated Steatotic Liver Disease in Patients With Type 2 Diabetes: Are We Doing Enough.pdf>)
 
 ## Abstracts
 
