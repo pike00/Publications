@@ -23,6 +23,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Heart Transplant Outcomes in Patients with Substance Use Disorder History: A Nation-wide Cohort Study using High-Dimensional Propensity Score Matching](<Publications/017 Heart Transplant Outcomes in SUD/Heart transplant outcomes in patients with substance use disorder history- a nationwide cohort study using high-dimensional propensity score matching.pdf>)
 - [Perioperative Pressure Injuries: A Descriptive Study of Patient Characteristics](<Publications/018 Perioperative Pressure Injuries/Perioperative Pressure Injuries A Descriptive Study of Patient Characteristics.pdf>)
 - [Real-World Alcohol Use Disorder Outcomes in Patients With Concurrent Metabolic Dysfunction: GLP-1 Receptor Agonists Versus FDA-Approved AUD Medications](<Publications/019 MetALD + AUD + GLP1/Real-World Alcohol Use disorder.pdf>)
+- [Inflammatory vaginitis in women with multiple sclerosis: a retrospective analysis of B-cell depleting therapy compared to other disease modifying therapies](<Publications/020 Inflammatory Vaginitis in Multiple Sclerosis/Inflammatory vaginitis in women with multiple sclerosis.pdf>)
 
 ## Abstracts, Posters, and Presentations
 

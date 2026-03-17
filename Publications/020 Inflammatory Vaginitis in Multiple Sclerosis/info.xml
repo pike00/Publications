@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>39454471</Id>
+	<Item Name="PubDate" Type="Date">2024 Dec</Item>
+	<Item Name="EPubDate" Type="Date">2024 Oct 17</Item>
+	<Item Name="Source" Type="String">Mult Scler Relat Disord</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Conway S</Item>
+		<Item Name="Author" Type="String">Dodson C</Item>
+		<Item Name="Author" Type="String">Hui G</Item>
+		<Item Name="Author" Type="String">William Pike C</Item>
+		<Item Name="Author" Type="String">Galetta K</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Galetta K</Item>
+	<Item Name="Title" Type="String">Inflammatory vaginitis in women with multiple sclerosis: a retrospective analysis of B-cell depleting therapy compared to other disease modifying therapies.</Item>
+	<Item Name="Volume" Type="String">92</Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String">105921</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101580247</Item>
+	<Item Name="ISSN" Type="String">2211-0348</Item>
+	<Item Name="ESSN" Type="String">2211-0356</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Comparative Study</Item>
+		<Item Name="PubType" Type="String">Letter</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish+epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">39454471</Item>
+		<Item Name="doi" Type="String">10.1016/j.msard.2024.105921</Item>
+		<Item Name="pii" Type="String">S2211-0348(24)00497-8</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1016/j.msard.2024.105921</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2024/05/20 00:00</Item>
+		<Item Name="revised" Type="Date">2024/09/19 00:00</Item>
+		<Item Name="accepted" Type="Date">2024/10/05 00:00</Item>
+		<Item Name="medline" Type="Date">2024/12/16 11:30</Item>
+		<Item Name="pubmed" Type="Date">2024/10/26 19:26</Item>
+		<Item Name="entrez" Type="Date">2024/10/25 18:09</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Multiple sclerosis and related disorders</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1016/j.msard.2024.105921</Item>
+	<Item Name="SO" Type="String">2024 Dec;92:105921</Item>
+</DocSum>
+
+</eSummaryResult>
