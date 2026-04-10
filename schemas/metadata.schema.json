@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Publication Metadata",
+  "description": "Schema for publication and abstract metadata files",
+  "type": "object",
+  "required": ["title", "authors", "journal", "date_published"],
+  "additionalProperties": false,
+  "properties": {
+    "title":          { "type": "string", "minLength": 1 },
+    "authors":        { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "journal":        { "type": "string", "minLength": 1 },
+    "date_published": { "type": "string", "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$" },
+    "doi":            { "type": "string", "pattern": "^10\\." },
+    "pub_type":       { "type": "string" },
+    "pmid":           { "type": "integer", "minimum": 1 },
+    "pmc":            { "type": "string", "pattern": "^PMC\\d+$" },
+    "volume":         { "type": "string" },
+    "issue":          { "type": "string" },
+    "pages":          { "type": "string" },
+    "journal_abbrev": { "type": "string" },
+    "abstract_id":    { "type": "string" }
+  }
+}
