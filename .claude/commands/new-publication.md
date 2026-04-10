@@ -13,15 +13,15 @@ The user provided: $ARGUMENTS
 
 ```
 Publications/NNN Short Title/   -- published journal articles
-  info.xml                      -- raw PubMed eSummary XML
+  metadata.yml                  -- curated publication metadata (validated by schemas/metadata.schema.json)
   Paper Title.pdf               -- the paper PDF
 Abstracts/NNN Short Title/      -- conference abstracts/posters
-  info.xml
+  metadata.yml                  -- includes abstract_id field if applicable
   Paper Title.pdf
-  abstract_id.txt               -- poster/abstract ID if applicable
 Unpublished/                    -- unpublished work (flat, no subfolders)
   Paper Title.pdf
 README.md                       -- index with links to all PDFs
+schemas/metadata.schema.json    -- JSON Schema for metadata.yml validation
 ```
 
 Default type is **Publication** unless the user says otherwise.
@@ -106,10 +106,31 @@ Then create the folder.
 
 ## Step 6: Save Metadata
 
-Move the info.xml into the new folder:
-```bash
-mv /tmp/info.xml "Publications/NNN Folder Name/info.xml"
+Write a `metadata.yml` file in the new folder using the extracted metadata fields. The file must conform to `schemas/metadata.schema.json`. Include these fields:
+
+**Required:** `title` (strip trailing period), `authors` (list in "Last Initials" format), `journal` (full name from FullJournalName), `date_published` (ISO 8601 YYYY-MM-DD; use 1st of month if day unknown)
+
+**Recommended:** `doi`, `pub_type` (e.g., "Journal Article")
+
+**Optional:** `pmid` (integer), `pmc` (e.g., "PMC1234567"), `volume`, `issue`, `pages`, `journal_abbrev` (abbreviated name from Source field)
+
+Omit optional fields that are empty. For abstracts, ask if there is a poster/abstract ID and include it as `abstract_id`.
+
+Use double-quoted strings in the YAML for consistency. Example:
+
+```yaml
+"title": "Paper Title Here"
+"authors":
+- "Pike CW"
+- "Smith J"
+"journal": "Journal of Example Medicine"
+"date_published": "2025-03-15"
+"doi": "10.1234/example"
+"pub_type": "Journal Article"
+"pmid": 12345678
 ```
+
+Delete the temporary `/tmp/info.xml` after extracting metadata -- it is not saved to the folder.
 
 ## Step 7: Handle the PDF
 
@@ -159,7 +180,7 @@ Do NOT push unless the user explicitly asks.
 
 ## Edge Cases
 
-- If the paper is not indexed in PubMed and CrossRef also fails, ask the user to provide the metadata manually (title, authors, journal, date, DOI) and skip the info.xml.
-- For abstracts, ask if they have a poster/abstract ID. If so, save it to `abstract_id.txt` in the folder.
+- If the paper is not indexed in PubMed and CrossRef also fails, ask the user to provide the required metadata fields (title, authors, journal, date_published) and any optional fields (doi, pub_type, etc.) to write `metadata.yml` directly.
+- For abstracts, ask if they have a poster/abstract ID. If so, include it as the `abstract_id` field in `metadata.yml`.
 - For unpublished work, skip the folder creation -- just place the PDF directly in `Unpublished/` and update README.
 - If the PDF download fails (403, paywall, etc.), fall back to opening the DOI URL in the browser.
