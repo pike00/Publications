@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>41813606</Id>
+	<Item Name="PubDate" Type="Date">2026 Mar 11</Item>
+	<Item Name="EPubDate" Type="Date">2026 Mar 11</Item>
+	<Item Name="Source" Type="String">Aliment Pharmacol Ther</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Gougol A</Item>
+		<Item Name="Author" Type="String">Kwo P</Item>
+		<Item Name="Author" Type="String">Pike W</Item>
+		<Item Name="Author" Type="String">Farokhnia M</Item>
+		<Item Name="Author" Type="String">Hui G</Item>
+		<Item Name="Author" Type="String">Gombar S</Item>
+		<Item Name="Author" Type="String">Mirminachi B</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Mirminachi B</Item>
+	<Item Name="Title" Type="String">Real-World Alcohol Use Disorder Outcomes in Patients With Concurrent Metabolic Dysfunction: GLP-1 Receptor Agonists Versus FDA-Approved AUD Medications.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String"></Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8707234</Item>
+	<Item Name="ISSN" Type="String">0269-2813</Item>
+	<Item Name="ESSN" Type="String">1365-2036</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">41813606</Item>
+		<Item Name="doi" Type="String">10.1111/apt.70596</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1111/apt.70596</Item>
+	<Item Name="History" Type="List">
+		<Item Name="revised" Type="Date">2026/02/08 00:00</Item>
+		<Item Name="received" Type="Date">2025/12/11 00:00</Item>
+		<Item Name="accepted" Type="Date">2026/02/16 00:00</Item>
+		<Item Name="pubmed" Type="Date">2026/03/12 01:09</Item>
+		<Item Name="medline" Type="Date">2026/03/12 01:09</Item>
+		<Item Name="entrez" Type="Date">2026/03/11 23:43</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Alimentary pharmacology &amp; therapeutics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1111/apt.70596</Item>
+	<Item Name="SO" Type="String">2026 Mar 11;</Item>
+</DocSum>
+
+</eSummaryResult>
