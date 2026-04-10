@@ -24,6 +24,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Perioperative Pressure Injuries: A Descriptive Study of Patient Characteristics](<Publications/018 Perioperative Pressure Injuries/Perioperative Pressure Injuries A Descriptive Study of Patient Characteristics.pdf>)
 - [Real-World Alcohol Use Disorder Outcomes in Patients With Concurrent Metabolic Dysfunction: GLP-1 Receptor Agonists Versus FDA-Approved AUD Medications](<Publications/019 MetALD + AUD + GLP1/Real-World Alcohol Use disorder.pdf>)
 - [Inflammatory vaginitis in women with multiple sclerosis: a retrospective analysis of B-cell depleting therapy compared to other disease modifying therapies](<Publications/020 Inflammatory Vaginitis in Multiple Sclerosis/Inflammatory vaginitis in women with multiple sclerosis.pdf>)
+- [Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty](<Publications/021 PJI Racial Disparities TKA/Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty.pdf>)
 
 ## Abstracts, Posters, and Presentations
 

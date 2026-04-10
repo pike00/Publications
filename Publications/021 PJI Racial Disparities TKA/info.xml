@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>41951063</Id>
+	<Item Name="PubDate" Type="Date">2026 Apr 6</Item>
+	<Item Name="EPubDate" Type="Date">2026 Apr 6</Item>
+	<Item Name="Source" Type="String">J Arthroplasty</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Furukawa D</Item>
+		<Item Name="Author" Type="String">Pike CW</Item>
+		<Item Name="Author" Type="String">Hui G</Item>
+		<Item Name="Author" Type="String">Coyle J</Item>
+		<Item Name="Author" Type="String">Amanatullah DF</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Amanatullah DF</Item>
+	<Item Name="Title" Type="String">Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty.</Item>
+	<Item Name="Volume" Type="String"></Item>
+	<Item Name="Issue" Type="String"></Item>
+	<Item Name="Pages" Type="String"></Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">8703515</Item>
+	<Item Name="ISSN" Type="String">0883-5403</Item>
+	<Item Name="ESSN" Type="String">1532-8406</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - as supplied by publisher</Item>
+	<Item Name="PubStatus" Type="String">aheadofprint</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">41951063</Item>
+		<Item Name="doi" Type="String">10.1016/j.arth.2026.03.090</Item>
+		<Item Name="pii" Type="String">S0883-5403(26)00312-8</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1016/j.arth.2026.03.090</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2025/10/19 00:00</Item>
+		<Item Name="revised" Type="Date">2026/03/30 00:00</Item>
+		<Item Name="accepted" Type="Date">2026/03/30 00:00</Item>
+		<Item Name="medline" Type="Date">2026/04/09 00:33</Item>
+		<Item Name="pubmed" Type="Date">2026/04/09 00:33</Item>
+		<Item Name="entrez" Type="Date">2026/04/08 19:12</Item>
+	</Item>
+	<Item Name="References" Type="List"></Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">The Journal of arthroplasty</Item>
+	<Item Name="ELocationID" Type="String">pii: S0883-5403(26)00312-8. doi: 10.1016/j.arth.2026.03.090</Item>
+	<Item Name="SO" Type="String">2026 Apr 6;</Item>
+</DocSum>
+
+</eSummaryResult>
