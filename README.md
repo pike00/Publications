@@ -26,6 +26,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Real-World Alcohol Use Disorder Outcomes in Patients With Concurrent Metabolic Dysfunction: GLP-1 Receptor Agonists Versus FDA-Approved AUD Medications](<Publications/019 MetALD + AUD + GLP1/Real-World Alcohol Use disorder.pdf>)
 - [Inflammatory vaginitis in women with multiple sclerosis: a retrospective analysis of B-cell depleting therapy compared to other disease modifying therapies](<Publications/020 Inflammatory Vaginitis in Multiple Sclerosis/Inflammatory vaginitis in women with multiple sclerosis.pdf>)
 - [Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty](<Publications/021 PJI Racial Disparities TKA/Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty.pdf>)
+- [A missed opportunity: a retrospective cohort study of alcohol use disorder pharmacotherapy in hospitalized patients](<Publications/022 AUD Pharmacotherapy in Hospitalized Patients/A missed opportunity a retrospective cohort study of alcohol use disorder pharmacotherapy in hospitalized patients.pdf>)
 
 ## Abstracts, Posters, and Presentations
 
@@ -35,6 +36,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Has the use of pre‐operative urodynamics for stress urinary incontinence surgery changed following the value study?](<Abstracts/004 Pre-operative Urodynamics for SUI After value study/Has the use of pre-operative urodynamics for stress urinary incontinence changed following hte value study.pdf>)
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
 - [Early identification of patients likely to benefit from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data](<Abstracts/006 PNH Model/Early identication of patients likely to benet from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data.pdf>)
+- [Comparative risk of new-onset autoimmune disease following COVID-19 mRNA versus DNA vaccination: A propensity-matched cohort study using the epic cosmos database](<Abstracts/022 COVID Vaccine Autoimmune Disease/Comparative risk of new-onset autoimmune disease following COVID-19 mRNA versus DNA vaccination.pdf>)
 
 ## Non-Published Abstracts, Posters, etc.
 
