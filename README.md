@@ -27,6 +27,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Inflammatory vaginitis in women with multiple sclerosis: a retrospective analysis of B-cell depleting therapy compared to other disease modifying therapies](<Publications/020 Inflammatory Vaginitis in Multiple Sclerosis/Inflammatory vaginitis in women with multiple sclerosis.pdf>)
 - [Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty](<Publications/021 PJI Racial Disparities TKA/Comorbidities Affect the Racial Disparities in the Incidence of Periprosthetic Joint Infection after Total Knee Arthroplasty.pdf>)
 - [A missed opportunity: a retrospective cohort study of alcohol use disorder pharmacotherapy in hospitalized patients](<Publications/022 AUD Pharmacotherapy in Hospitalized Patients/A missed opportunity a retrospective cohort study of alcohol use disorder pharmacotherapy in hospitalized patients.pdf>)
+- Real-World Evidence Assessment of the Risk of Non-fatal Stroke in Patients Prescribed SGLT2 Inhibitors (accepted, Stroke Research and Treatment)
 
 ## Abstracts, Posters, and Presentations
 
