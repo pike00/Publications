@@ -38,6 +38,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Opioid prescription use in patients with interstitial cystitis](<Abstracts/005 Opioid Prescriptions in interstitial cystitis/Opioid Prescription use in patients with Interstitial Cystitis.pdf>)
 - [Early identification of patients likely to benefit from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data](<Abstracts/006 PNH Model/Early identication of patients likely to benet from paroxysmal nocturnal hemoglobinuria workup using machine learning on large-scale real-world data.pdf>)
 - [Comparative risk of new-onset autoimmune disease following COVID-19 mRNA versus DNA vaccination: A propensity-matched cohort study using the epic cosmos database](<Abstracts/022 COVID Vaccine Autoimmune Disease/Comparative risk of new-onset autoimmune disease following COVID-19 mRNA versus DNA vaccination.pdf>)
+- [Association between Semaglutide and Risk of Bone Fractures in Type 2 Diabetes](<Abstracts/023 Semaglutide Bone Fractures T2D/Association between Semaglutide and Risk of Bone Fractures in Type 2 Diabetes.pdf>)
 
 ## Non-Published Abstracts, Posters, etc.
 
