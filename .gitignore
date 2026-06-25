@@ -3,6 +3,9 @@
 # Generated build artifacts (publications.pdf CV, etc.)
 build/
 
+# Local secrets / config (see .env.example)
+.env
+
 # Python / uv
 __pycache__/
 *.pyc
