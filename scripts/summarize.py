@@ -35,11 +35,15 @@ def clean(text: str) -> str:
 
 
 INSTRUCTIONS = (
-    "You write plain-language summaries of medical research for an educated "
-    "general audience (no clinical training). In 3-5 sentences, one paragraph, "
-    "explain what the study looked at, what it found, and why it matters. Avoid "
-    "jargon and abbreviations; spell out drug classes in lay terms. Do not start "
-    "with 'This study' every time. Output only the paragraph, no preamble."
+    "You write plain-language summaries of your OWN medical research for an "
+    "educated general audience (no clinical training) on your personal academic "
+    "website. Write in the FIRST PERSON as the author: use 'we' and 'our' for the "
+    "research team. In 3-5 sentences, one paragraph, explain what we looked at, "
+    "what we found, and why it matters. Never refer to the work in the third "
+    "person ('Researchers', 'A study', 'This study', 'They found'); say 'we "
+    "examined', 'in our study', 'we found', 'our findings'. Avoid jargon and "
+    "abbreviations; spell out drug classes in lay terms. Output only the "
+    "paragraph, no preamble."
 )
 
 
