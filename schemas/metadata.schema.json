@@ -11,7 +11,7 @@
     "journal":        { "type": "string", "minLength": 1 },
     "date_published": { "type": "string", "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$" },
     "doi":            { "type": "string", "pattern": "^10\\." },
-    "pub_type":       { "type": "string" },
+    "pub_type":       { "type": "string", "enum": ["Abstract/Poster", "Case Reports", "Comparative Study", "Journal Article", "Review Paper"] },
     "pmid":           { "type": "integer", "minimum": 1 },
     "pmc":            { "type": "string", "pattern": "^PMC\\d+$" },
     "volume":         { "type": "string" },
@@ -19,6 +19,10 @@
     "pages":          { "type": "string" },
     "journal_abbrev": { "type": "string" },
     "tags":           { "type": "array", "items": { "type": "string", "minLength": 1 } },
-    "abstract_id":    { "type": "string" }
+    "abstract_id":    { "type": "string" },
+    "abstract":       { "type": "string", "minLength": 1 },
+    "summary":        { "type": "string", "minLength": 1 },
+    "orcid":          { "type": "string", "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[\\dX]$" },
+    "citation_count": { "type": "integer", "minimum": 0 }
   }
 }
