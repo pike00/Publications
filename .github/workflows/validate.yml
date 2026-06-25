@@ -1,0 +1,23 @@
+name: Validate
+
+# Gate metadata and the generated README on every push / PR, so the public
+# index can never silently drift from the folders on disk. Replaces the old
+# notify-site dispatch (which triggered on a branch that no longer exists).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Validate metadata against schema
+        run: uv run scripts/validate_metadata.py
+      - name: README is up to date with metadata
+        run: uv run scripts/generate_readme.py --check
+      - name: DOIs resolve and README links exist
+        run: uv run scripts/check_links.py
