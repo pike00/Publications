@@ -14,10 +14,25 @@ of each metadata.yml is preserved.
 """
 
 import json
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import publib
+
+
+def clean(text: str) -> str:
+    """Normalize LLM punctuation to the house style: no em/en dashes, no smart
+    quotes. En dashes in numeric ranges become hyphens; other dashes become a
+    comma."""
+    text = text.strip()
+    text = (text.replace("’", "'").replace("‘", "'")
+                .replace("“", '"').replace("”", '"'))
+    text = re.sub(r"(?<=\d)\s*–\s*(?=\d)", "-", text)  # ranges: 50–90 -> 50-90
+    text = re.sub(r"\s*[—–]\s*", ", ", text)       # other dashes -> comma
+    text = re.sub(r",\s*,", ",", text)
+    return re.sub(r"\s{2,}", " ", text)
+
 
 SYSTEM = (
     "You write plain-language summaries of medical research for an educated "
@@ -39,7 +54,7 @@ def summarize_one(settings, entry):
     import llm
 
     text = llm.chat(settings, SYSTEM, build_prompt(entry.metadata), max_tokens=400, temperature=0.4)
-    return entry, text
+    return entry, clean(text)
 
 
 def main() -> None:
