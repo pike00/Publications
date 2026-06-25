@@ -18,14 +18,15 @@ stderr via `publib.py`. Run them through the `justfile` at the repo root.
 | `just summarize` | `summarize.py` | Draft plain-language summaries (LLM; run on a branch) |
 | `just check` | — | validate + readme drift + links/DOIs |
 
-`publib.py` (shared helpers) and `llm.py` (shared OpenAI-compatible httpx client)
-are imported by the others, not run directly.
+`publib.py` (shared helpers) and `llm.py` (shared pydantic-ai client over the
+OpenAI-compatible endpoint) are imported by the others, not run directly.
 
 ## Conventions
 
 - **`uv` inline-script scripts**, `requires-python >= 3.14`. Run with `uv run`;
   no virtualenv or `requirements.txt` to manage.
-- **HTTP via `httpx`** (never `requests`/`urllib`).
+- **Direct HTTP via `httpx`** (never `requests`/`urllib`); LLM calls go through
+  **pydantic-ai** (which uses httpx under the hood).
 - **Config via `pydantic-settings`** (typed, validated at construction) - see below.
 - **Structured JSON logs to stderr** (`publib.get_logger`); start/end events with
   `elapsed_s`.

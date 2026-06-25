@@ -59,7 +59,8 @@ gates the pre-push hook (`just hooks`) and CI. Full recipe list and config in
 [scripts/README.md](scripts/README.md). Conventions for anything added here:
 
 - **`uv` inline-script scripts**, `requires-python >= 3.14`; run via `uv run` / `just`.
-- **HTTP through `httpx`**, never `requests`/`urllib`.
+- **Direct HTTP through `httpx`**, never `requests`/`urllib`; **LLM calls through
+  `pydantic-ai`** (`scripts/llm.py`), which uses httpx under the hood.
 - **Config through `pydantic-settings`** (typed, validated at construction); secrets
   as `SecretStr`. Only the LLM scripts read config (`.env` / env vars; see `.env.example`).
 - **Structured JSON logs to stderr** via `publib.get_logger` (start/end + `elapsed_s`).

@@ -1,11 +1,11 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.14"
-# dependencies = ["pyyaml", "pydantic-settings", "httpx"]
+# dependencies = ["pyyaml", "pydantic-settings", "pydantic-ai-slim[openai]"]
 # ///
-"""Generate a one-paragraph plain-language summary per entry via an
-OpenAI-compatible endpoint (default deepseek-v4-pro-cloud) and store it in the
-metadata ``summary`` field, so the publications page reads for non-specialists.
+"""Generate a one-paragraph plain-language summary per entry via the LLM endpoint
+(pydantic-ai, default deepseek-v4-pro-cloud) and store it in the metadata
+``summary`` field, so the publications page reads for non-specialists.
 
 These are LLM-drafted and MUST be reviewed: run this on a dedicated branch and
 open a PR. Idempotent (skips entries that already have a summary; --force to
@@ -34,7 +34,7 @@ def clean(text: str) -> str:
     return re.sub(r"\s{2,}", " ", text)
 
 
-SYSTEM = (
+INSTRUCTIONS = (
     "You write plain-language summaries of medical research for an educated "
     "general audience (no clinical training). In 3-5 sentences, one paragraph, "
     "explain what the study looked at, what it found, and why it matters. Avoid "
@@ -65,11 +65,10 @@ def main() -> None:
 
     import llm
 
-    settings = llm.LLMSettings()
+    agent = llm.build_agent(llm.LLMSettings(), instructions=INSTRUCTIONS)
 
     def run(entry):
-        return entry, clean(llm.chat(settings, SYSTEM, build_prompt(entry.metadata),
-                                     max_tokens=400, temperature=0.4))
+        return entry, clean(agent.run_sync(build_prompt(entry.metadata)).output)
 
     written = 0
     with ThreadPoolExecutor(max_workers=4) as pool:
