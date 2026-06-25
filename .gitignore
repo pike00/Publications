@@ -1,1 +1,9 @@
 .DS_Store
+
+# Generated build artifacts (publications.pdf CV, etc.)
+build/
+
+# Python / uv
+__pycache__/
+*.pyc
+.venv/
