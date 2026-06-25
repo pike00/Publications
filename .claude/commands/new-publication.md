@@ -168,20 +168,45 @@ Entry format (must match exactly):
 
 The link text is the full paper title from PubMed (strip trailing period if present). The path is relative to the repo root.
 
-## Step 9: Review and Commit
+## Step 9: Review and Commit (via PR)
 
 Show the user everything that was created:
 - Folder path
 - Files in the folder
 - The README entry that was added
 
-Ask if they want to commit. If yes:
-1. `git fetch origin` first
-2. Create a feature branch: `git checkout -b add-pub-NNN-short-name`
-3. Stage the new folder and README.md
-4. Commit with message: "Add publication on [short description] and update README"
+The default branch is `main` and is **PR-protected**: a repository ruleset requires every change to land through a pull request (squash-merge only, 0 approvals required, no bypass -- even the owner cannot push straight to `main`). So you cannot push directly; land the work with a short self-merged PR.
 
-Do NOT push unless the user explicitly asks.
+Ask if they want to commit. If yes (this is a PUBLIC repo, so only push/PR once the user approves):
+
+1. Sync first so you branch from the current tip:
+   ```bash
+   git fetch origin && git merge --ff-only origin/main
+   ```
+2. Create a feature branch:
+   ```bash
+   git checkout -b add-pub-NNN-short-name
+   ```
+3. Commit ONLY the new folder + README.md, pathspec-scoped so unrelated files are never swept in (message: "Add publication on [short description] and update README"):
+   ```bash
+   git commit -m "Add publication on [short description] and update README" -- "Publications/NNN Folder Name/" README.md
+   ```
+4. Push the branch, open the PR, and squash-merge it (0 approvals needed, so self-merge):
+   ```bash
+   git push -u origin add-pub-NNN-short-name
+   gh pr create --base main --head add-pub-NNN-short-name \
+     --title "Add publication on [short description]" --body "Adds publication NNN."
+   gh pr merge --squash --delete-branch
+   ```
+5. Resync local `main` to the squashed result. The squash commit diverges from your branch, so `git pull` will refuse to fast-forward -- move the ref instead, and never `git reset --hard`:
+   ```bash
+   git fetch origin
+   git switch --detach origin/main
+   git branch -f main origin/main
+   git switch main
+   ```
+
+Deploying to the live site (pikemd.com) is a separate, explicit step -- see "Updating the live site" in `CLAUDE.md` (bump the submodule in personal-site and `just deploy`). A push/merge here does not deploy anything.
 
 ## Edge Cases
 
