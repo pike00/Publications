@@ -1,12 +1,12 @@
 ---
 title: Reformat Abstracts author names to FirstInitialMiddleInitial Lastname
-status: planned
+status: archived
 repos: [publications]
 started: 2026-05-29
-last_updated: 2026-05-29
+last_updated: 2026-06-25
 effort: S
 impact: low
-next_step: Reformat the clean Abstracts/*/metadata.yml author lists; manually resolve the malformed "A UA" placeholder entries before converting 001-003
+next_step: Done. Shipped via scripts/normalize_authors.py (commit 6a3a1bf). Only the "A UA" placeholder authors in abstracts 001-003 remain, tracked separately.
 ---
 
 # Reformat Abstracts author names to FirstInitialMiddleInitial Lastname
@@ -35,13 +35,23 @@ Reuse the exact transform already validated on `Publications/`:
 
 The `Abstracts` metadata.yml use the same `"authors":`-block + `- "Name"` YAML shape as `Publications`, so the same line-targeted rewrite (edit only the quoted author strings, leave all other keys/format byte-identical) applies. Do **not** round-trip through a YAML dumper — it reflows the whole file.
 
+## Resolution (2026-06-25)
+
+Completed by `scripts/normalize_authors.py` (commit `6a3a1bf`), which enforces the
+initials-first house style mechanically (Vancouver + full-name -> initials-first,
+Will canonicalized to `CW Pike`) and is idempotent. The retired
+`enrich_author_names.py` (which expanded names the wrong way) was deleted in the
+same pass. Abstract 001-003 titles were also corrected (they held the supplement's
+collective title). The only outstanding item is the `"A UA"` placeholder author on
+abstracts 001-003, which needs real author data and is intentionally left untouched.
+
 ## Tasks
 
-- [ ] Resolve the `"A UA"` placeholder authors in abstracts 001, 002, 003 (get real author lists, or drop the field) — blocks converting those three
-- [ ] Run the validated transform over `Abstracts/*/metadata.yml` (skip the unresolved placeholders)
-- [ ] Diff-review every changed author line (same care as the Publications pass)
-- [ ] Validate all `Abstracts/*/metadata.yml` still parse as YAML
-- [ ] Commit to `pike00/Publications` master; no personal-site pointer bump needed (docs/data-only, no site effect)
+- [~] Resolve the `"A UA"` placeholder authors in abstracts 001, 002, 003 — still open (titles fixed, authors still placeholder)
+- [x] Run the validated transform over `Abstracts/*/metadata.yml` (skip the unresolved placeholders)
+- [x] Diff-review every changed author line (same care as the Publications pass)
+- [x] Validate all `Abstracts/*/metadata.yml` still parse as YAML
+- [x] Commit to `pike00/Publications` main (docs/data-only, no site effect)
 
 ## Preview (clean entries, already computed 2026-05-29)
 

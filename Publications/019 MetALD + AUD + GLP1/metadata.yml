@@ -3,7 +3,7 @@
 "authors":
 - "A Gougol"
 - "P Kwo"
-- "W Pike"
+- "CW Pike"
 - "M Farokhnia"
 - "G Hui"
 - "S Gombar"
@@ -15,3 +15,4 @@
 "pmid": 41813606
 "journal_abbrev": "Aliment Pharmacol Ther"
 "tags": ["Endocrinology", "Substance Use", "Hepatology"]
+"abstract": "BACKGROUND: Metabolic dysfunction (MetD) and alcohol use disorder (AUD) frequently coexist as synergistic risk factors for steatotic liver disease. Glucagon-like peptide-1 receptor agonists (GLP-1RAs) are established therapies for MetD, including type 2 diabetes mellitus (T2DM) and obesity. Recent studies suggested potential beneficial effects of GLP-1RA to decrease addictive behaviours in AUD. We evaluated the outcomes of GLP-1RA therapy compared with FDA-approved pharmacotherapies for AUD, including naltrexone, acamprosate, and disulfiram, in patients with dual risk factors of MetD and AUD.\n\nMETHODS: We conducted a retrospective cohort study of patients at Stanford Health Care (2017-2025). Eligible patients had a concurrent diagnosis of alcohol-related complications meeting criteria for AUD and MetD, including obesity (BMI > 25) and/or a history of T2DM with HbA1c > 5.7. Those with advanced liver disease within 1 year of diagnosis were excluded. Exposure groups included ≥ 6 months of GLP-1RA therapy (semaglutide or tirzepatide) in comparison with FDA-approved pharmacotherapies for AUD. Propensity score matching was employed to reduce the effects of confounding factors.\n\nRESULTS: In total, 1946 patients were diagnosed concurrently with AUD and MetD. Of them, 274 patients were exposed to GLP-1RA, 1272 to naltrexone, 232 to acamprosate, and 168 to disulfiram. Patients were followed for an average of 1341 days. Patients exposed to GLP-1RA had higher BMI (35.5 vs. 30.1) and more T2DM (66% vs. 14%). GLP-1RA therapy was associated with lower 1-year AUD relapse [IRR 0.55, 95% CI 0.42-0.73; p < 0.01], greater BMI reduction (-1.3 vs. -0.3; p = 0.004), and HbA1c improvement (-1.0 vs. +0.1; p = 0.02). The incidence of decompensated cirrhosis trended lower but was not statistically significant [HR 0.52, p = 0.09]. Mortality was similar.\n\nCONCLUSIONS: GLP-1RAs are a promising option for patients with concurrent MetD and AUD, improving relapse rates and metabolic outcomes compared with currently FDA-approved pharmacotherapies for AUD. Trends toward better liver outcomes support further prospective evaluation."

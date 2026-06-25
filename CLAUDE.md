@@ -15,8 +15,8 @@ Entries are frequently pre-created upstream as "accepted" placeholders before a 
 published, then filled in later. Another machine or PR may already have added the folder.
 A stale local tree is how duplicate folders get created. So ALWAYS, before creating anything:
 
-1. Sync: `gitop -- git fetch origin` then `gitop -- git merge --ff-only origin/main`
-   (or `git pull --ff-only`). Never start from a stale tree.
+1. Sync: `git fetch origin` then `git merge --ff-only origin/main` (or `git pull --ff-only`).
+   Never start from a stale tree.
 2. Search for an existing entry by title keyword, DOI, and author across BOTH the working
    tree and `origin/main`:
    - `grep -rin "<keyword>\|<doi>" README.md Publications Abstracts`
@@ -35,10 +35,11 @@ Only when no entry exists: create `Publications/NNN Short Title/` where NNN =
 `metadata.yml` must validate against `schemas/metadata.schema.json`.
 
 **Author format (ALWAYS normalize):** initials-first surname, e.g. `CW Pike`, `ML Jackson` -
-NOT surname-first (`Pike CW`). Will Pike is ALWAYS `CW Pike` (never `WC Pike`, never `Pike WC`).
-The personal-site build bolds the self-author by an exact match on `CW Pike`/`W Pike`
-(`src/lib/authors.ts`), so any other spelling renders Will's name unbolded. Convert every name
-pulled from CrossRef/PubMed to this form before writing the entry.
+NOT surname-first (`Pike CW`). Will Pike is ALWAYS `CW Pike` - every variant collapses to it,
+including the single-initial `W Pike`/`Pike W`. `just normalize` (`scripts/normalize_authors.py`)
+enforces this mechanically. The personal-site build bolds the self-author by an exact match on
+`CW Pike`/`W Pike` (`src/lib/authors.ts`), so any other spelling renders Will's name unbolded.
+Convert every name pulled from CrossRef/PubMed to this form before writing the entry.
 
 **Tags (source of truth lives here):** the `tags` field (array of strings) drives the topic
 chips on the website. Pick 1-3 from the vocabulary already used across the repo - Cardiology,
@@ -49,6 +50,21 @@ is retired - the metadata `tags` field is now the only source.)
 
 2026+ papers are often not yet in PubMed - fall back to CrossRef
 (`https://api.crossref.org/works/<doi>`) and omit `pmid`/`pmc`.
+
+## Scripts and conventions
+
+`metadata.yml` is the single source of truth: `README.md` is a build artifact
+(`just readme`), and `just check` (validate + README drift + DOI/link resolution)
+gates the pre-push hook (`just hooks`) and CI. Full recipe list and config in
+[scripts/README.md](scripts/README.md). Conventions for anything added here:
+
+- **`uv` inline-script scripts**, `requires-python >= 3.14`; run via `uv run` / `just`.
+- **Direct HTTP through `httpx`**, never `requests`/`urllib`; **LLM calls through
+  `pydantic-ai`** (`scripts/llm.py`), which uses httpx under the hood.
+- **Config through `pydantic-settings`** (typed, validated at construction); secrets
+  as `SecretStr`. Only the LLM scripts read config (`.env` / env vars; see `.env.example`).
+- **Structured JSON logs to stderr** via `publib.get_logger` (start/end + `elapsed_s`).
+- **Generated prose** (LLM summaries) carries no em/en dashes and no smart quotes.
 
 ## Updating the live site (deployment)
 
