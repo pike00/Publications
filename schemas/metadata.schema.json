@@ -22,6 +22,7 @@
     "abstract_id":    { "type": "string" },
     "abstract":       { "type": "string", "minLength": 1 },
     "summary":        { "type": "string", "minLength": 1 },
+    "hook":           { "type": "string", "minLength": 1, "maxLength": 160 },
     "orcid":          { "type": "string", "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[\\dX]$" },
     "citation_count": { "type": "integer", "minimum": 0 }
   }
