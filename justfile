@@ -49,6 +49,10 @@ autotag *ARGS:
 summarize *ARGS:
     uv run scripts/summarize.py {{ARGS}}
 
+# draft a one-line headline hook per entry via the LLM proxy (run on a branch)
+hook *ARGS:
+    uv run scripts/hook.py {{ARGS}}
+
 # full check: metadata valid + README current + links/DOIs resolve
 check:
     uv run scripts/validate_metadata.py
