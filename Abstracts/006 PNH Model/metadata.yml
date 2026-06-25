@@ -14,4 +14,4 @@
 "pages": "4341"
 "tags": ["Health Informatics", "Artificial Intelligence"]
 "summary": "Researchers applied machine learning to large-scale health records to find patients who might have undiagnosed paroxysmal nocturnal hemoglobinuria, a rare blood disorder that causes red blood cells to break down. The model identified individuals with symptoms like anemia, blood clots, and dark urine who were likely to have the condition but had not been tested. Catching this disorder earlier could help patients receive treatment sooner, potentially preventing life-threatening complications such as severe clotting and organ damage."
-"hook": "A machine learning model can flag undiagnosed paroxysmal nocturnal hemoglobinuria patients from routine health records"
+"hook": "A machine learning model can flag patients likely to have undiagnosed paroxysmal nocturnal hemoglobinuria months before a formal diagnosis"

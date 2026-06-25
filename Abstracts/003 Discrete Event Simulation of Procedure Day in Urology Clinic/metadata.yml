@@ -14,4 +14,4 @@
 - "Urology"
 - "Health Informatics"
 "summary": "Researchers used a computer simulation to test whether scheduling all minor urological procedures on a single dedicated day could make clinics run more efficiently. The model showed that grouping these procedures together reduced patient wait times and allowed the clinic to see more patients without adding staff or rooms. This approach offers a practical way for urology clinics to improve access to care and streamline their daily operations."
-"hook": "Grouping minor urology procedures on one day cuts patient wait times and boosts clinic capacity without extra staff or rooms"
+"hook": "A simulated procedure-only clinic day holds urology wait times steady and helps more as procedure volume rises"
