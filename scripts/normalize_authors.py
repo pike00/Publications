@@ -15,9 +15,10 @@ Handles three input shapes and is idempotent on its own output:
   * full "Given [Given...] Surname" -> "INITIALS Surname"  ("Derek Liu" -> "D Liu")
   * already initials-first          -> unchanged           ("S Gombar")
 
-Will Pike is always canonicalized to "CW Pike" (or "W Pike" when only the W
-initial is present), regardless of the input spelling. The placeholder author
-"A UA" (abstracts 001-003, real authors unknown) is left untouched.
+Will Pike is always canonicalized to "CW Pike", regardless of the input spelling
+(even when only the W initial appears in the source, e.g. "Pike W" -> "CW Pike").
+The placeholder author "A UA" (abstracts 001-003, real authors unknown) is left
+untouched.
 
 Edits are line-targeted on the quoted author strings only; the rest of each
 file is preserved byte-for-byte (no YAML dumper round-trip).
@@ -27,13 +28,6 @@ import re
 import sys
 
 import publib
-
-# Genuinely ambiguous names (leading single initial + full middle name, which is
-# structurally indistinguishable from "initial + two-word surname"). Resolved
-# explicitly rather than guessed.
-OVERRIDES = {
-    "J Craig Davis": "JC Davis",
-}
 
 PLACEHOLDERS = {"A UA"}
 
@@ -71,12 +65,10 @@ def as_will(tokens: list[str]) -> str | None:
             letters.update(tok)
         else:
             return None  # some other Pike
-    if letters == {"c", "w"}:
+    # Will Pike is always "CW Pike", even when the source gives only one initial
+    # (e.g. "Pike W" / "W Pike" -> "CW Pike").
+    if letters and letters <= {"c", "w"}:
         return "CW Pike"
-    if letters == {"w"}:
-        return "W Pike"
-    if letters == {"c"}:
-        return "C Pike"
     return None
 
 
@@ -84,8 +76,6 @@ def normalize(name: str) -> str:
     name = name.strip()
     if name in PLACEHOLDERS:
         return name
-    if name in OVERRIDES:
-        return OVERRIDES[name]
 
     tokens = name.split()
     if len(tokens) < 2:
