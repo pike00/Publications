@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "pydantic-settings", "pypdf"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml", "httpx", "pypdf"]
 # ///
 """Populate each entry's ``abstract`` field so the site is searchable and can
 show summaries without re-fetching.
@@ -22,8 +22,9 @@ import json
 import re
 import sys
 import time
-import urllib.request
 import xml.etree.ElementTree as ET
+
+import httpx
 
 import publib
 
@@ -36,9 +37,13 @@ SECTION_HEADINGS = re.compile(
 
 
 def fetch_pubmed_abstract(pmid: int) -> str | None:
-    url = f"{EFETCH}?db=pubmed&id={pmid}&retmode=xml"
-    with urllib.request.urlopen(url, timeout=20) as resp:
-        root = ET.fromstring(resp.read())
+    resp = httpx.get(
+        EFETCH,
+        params={"db": "pubmed", "id": str(pmid), "retmode": "xml"},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    root = ET.fromstring(resp.content)
     segs = root.findall(".//Abstract/AbstractText")
     if not segs:
         return None

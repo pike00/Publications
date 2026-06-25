@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "pydantic-settings"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml", "httpx"]
 # ///
 """Validate that the repo's links resolve before they ship to the public site.
 
@@ -17,11 +17,12 @@ Exit 1 on any broken link or unregistered/unreachable DOI; 0 otherwise.
 Pass --offline to skip the DOI network checks.
 """
 
-import json
 import re
 import sys
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import quote
+
+import httpx
 
 import publib
 
@@ -45,13 +46,14 @@ def readme_targets() -> list[str]:
 def doi_registered(doi: str) -> tuple[str, bool, str]:
     """Return (doi, ok, detail). responseCode 1 == handle exists."""
     try:
-        req = urllib.request.Request(
-            HANDLES_API + urllib.request.quote(doi, safe="/"),
+        resp = httpx.get(
+            HANDLES_API + quote(doi, safe="/"),
             headers={"Accept": "application/json"},
+            timeout=15,
+            follow_redirects=True,
         )
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.load(resp)
-        code = data.get("responseCode")
+        resp.raise_for_status()
+        code = resp.json().get("responseCode")
         return doi, code == 1, f"responseCode={code}"
     except Exception as e:  # noqa: BLE001
         return doi, False, str(e)

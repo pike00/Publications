@@ -18,8 +18,18 @@ stderr via `publib.py`. Run them through the `justfile` at the repo root.
 | `just summarize` | `summarize.py` | Draft plain-language summaries (LLM; run on a branch) |
 | `just check` | — | validate + readme drift + links/DOIs |
 
-`publib.py` (shared helpers) and `llm.py` (shared pydantic-ai client) are imported
-by the others, not run directly.
+`publib.py` (shared helpers) and `llm.py` (shared OpenAI-compatible httpx client)
+are imported by the others, not run directly.
+
+## Conventions
+
+- **`uv` inline-script scripts**, `requires-python >= 3.14`. Run with `uv run`;
+  no virtualenv or `requirements.txt` to manage.
+- **HTTP via `httpx`** (never `requests`/`urllib`).
+- **Config via `pydantic-settings`** (typed, validated at construction) - see below.
+- **Structured JSON logs to stderr** (`publib.get_logger`); start/end events with
+  `elapsed_s`.
+- **Generated prose** (summaries) uses no em/en dashes and no smart quotes.
 
 ## Configuration
 
@@ -29,13 +39,10 @@ Only the LLM scripts (`autotag.py`, `summarize.py`) need config. It is read via
 
 | Variable | Default | Notes |
 |---|---|---|
-| `LITELLM_BASE_URL` | `http://127.0.0.1:4000/v1` | OpenAI-compatible endpoint (include `/v1`) |
-| `LITELLM_API_KEY` | — | Required. Also read from `OPENAI_API_KEY`, `LITELLM_GATEWAY_KEY`, `AUDIT_SKILLS_PIKELLM_KEY` |
-| `PUBLICATIONS_MODEL` | `deepseek-v4-pro-cloud` | Model id served by the endpoint |
+| `LLM_BASE_URL` | `http://localhost:4000/v1` | OpenAI-compatible endpoint (include `/v1`). Also `LITELLM_BASE_URL` / `OPENAI_BASE_URL` |
+| `LLM_API_KEY` | — | Required. Also read from `LITELLM_API_KEY` / `OPENAI_API_KEY` |
+| `LLM_MODEL` | `deepseek-v4-pro-cloud` | Model id served by the endpoint. Also `PUBLICATIONS_MODEL` |
 
 Settings are validated at construction (a missing key fails fast), and the LLM
 client is only built when there is work to do, so an already-tagged /
 already-summarized repo runs with no key.
-
-Optional: set `PUBLICATIONS_LOKI_URL` to push the JSON logs to a Loki endpoint
-(otherwise logging is stderr-only).

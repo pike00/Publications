@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "pydantic-settings", "reportlab"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml", "reportlab"]
 # ///
 """Render a formatted publications CV (publications.pdf) from the metadata --
 the same source of truth that builds the website.

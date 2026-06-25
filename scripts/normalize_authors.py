@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "pydantic-settings"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml"]
 # ///
 """Normalize author names in every metadata.yml to the repo's house style:
 initials-first surname, e.g. "CW Pike", "ML Jackson" (CLAUDE.md / new-publication).

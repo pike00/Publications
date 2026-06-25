@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "pydantic-settings"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml"]
 # ///
 """Generate README.md from the metadata.yml files (single source of truth).
 

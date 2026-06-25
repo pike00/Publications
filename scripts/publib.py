@@ -1,15 +1,12 @@
 """Shared helpers for the publications repo tooling.
 
 Importable by any sibling script invoked via ``uv run scripts/<name>.py`` --
-uv puts ``scripts/`` on ``sys.path`` so ``import publib`` resolves. Depends on
-the standard library plus PyYAML and pydantic-settings (every importing script
-declares both in its own ``# /// script`` header, so they are available here).
+uv puts ``scripts/`` on ``sys.path`` so ``import publib`` resolves. Depends only
+on the standard library plus PyYAML (every importing script declares ``pyyaml``
+in its own ``# /// script`` header).
 
 Provides:
-  * ``get_logger`` -- structured JSON logging to stderr, with an optional
-    fire-and-forget push to Loki when ``PUBLICATIONS_LOKI_URL`` is set. This
-    mirrors the homelab structured-logging convention while staying portable
-    for a public repo (no homelab module import, no hard Loki dependency).
+  * ``get_logger`` -- structured JSON logging to stderr (one object per event).
   * ``iter_entries`` / ``Entry`` -- walk ``Publications/`` and ``Abstracts/``,
     yielding parsed metadata + the resolved PDF for each folder.
 """
@@ -17,28 +14,16 @@ Provides:
 from __future__ import annotations
 
 import json
-import socket
 import sys
 import time
-import urllib.request
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
-from pydantic import HttpUrl
-from pydantic_settings import BaseSettings, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENTRY_DIRS = ("Publications", "Abstracts")
-
-
-class LogSettings(BaseSettings):
-    """Logging-related config. The only env read in the tooling is the optional
-    Loki endpoint; absent it, logging is stderr-only and fully portable."""
-
-    model_config = SettingsConfigDict(extra="ignore")
-    publications_loki_url: HttpUrl | None = None
 
 
 # --------------------------------------------------------------------------- #
@@ -46,16 +31,12 @@ class LogSettings(BaseSettings):
 # --------------------------------------------------------------------------- #
 @dataclass
 class Logger:
-    """Minimal structured logger: one JSON object per event to stderr.
-
-    Buffers events and, on ``flush()``, pushes them to Loki in a single batch
-    iff ``PUBLICATIONS_LOKI_URL`` is set. The push never blocks correctness:
-    failures are swallowed and the timeout is short.
-    """
+    """Minimal structured logger: one JSON object per event, written to stderr
+    immediately. ``flush()`` is a no-op kept for call-site stability (there is
+    no buffered sink)."""
 
     script: str
     _t0: float = field(default_factory=time.monotonic)
-    _buf: list[tuple[str, str]] = field(default_factory=list)
 
     def _emit(self, level: str, msg: str, ctx: dict) -> None:
         rec = {
@@ -65,9 +46,7 @@ class Logger:
             "msg": msg,
             **ctx,
         }
-        line = json.dumps(rec, ensure_ascii=False)
-        print(line, file=sys.stderr, flush=True)
-        self._buf.append((str(time.time_ns()), line))
+        print(json.dumps(rec, ensure_ascii=False), file=sys.stderr, flush=True)
 
     def info(self, msg: str, **ctx) -> None:
         self._emit("info", msg, ctx)
@@ -81,32 +60,8 @@ class Logger:
     def elapsed(self) -> float:
         return round(time.monotonic() - self._t0, 3)
 
-    def flush(self) -> None:
-        url = LogSettings().publications_loki_url
-        if not url or not self._buf:
-            return
-        payload = {
-            "streams": [
-                {
-                    "stream": {
-                        "job": "publications",
-                        "script": self.script,
-                        "host": socket.gethostname(),
-                    },
-                    "values": [[ns, line] for ns, line in self._buf],
-                }
-            ]
-        }
-        try:
-            req = urllib.request.Request(
-                str(url),
-                data=json.dumps(payload).encode(),
-                headers={"Content-Type": "application/json"},
-                method="POST",
-            )
-            urllib.request.urlopen(req, timeout=3).close()
-        except Exception:
-            pass  # logging must never break the script
+    def flush(self) -> None:  # stderr is line-flushed already
+        return None
 
 
 def get_logger(script: str) -> Logger:

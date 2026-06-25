@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.12"
-# dependencies = ["pyyaml", "jsonschema", "pydantic-settings"]
+# requires-python = ">=3.14"
+# dependencies = ["pyyaml", "jsonschema"]
 # ///
 """Convert PubMed eSummary info.xml files to metadata.yml.
 

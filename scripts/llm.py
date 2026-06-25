@@ -1,55 +1,63 @@
-"""Shared pydantic-ai client for the LLM-backed tooling (autotag.py, summarize.py).
+"""Shared OpenAI-compatible LLM client for the LLM-backed tooling
+(autotag.py, summarize.py). Plain httpx against a /v1/chat/completions endpoint.
 
 Config is read via pydantic-settings (typed, validated at construction) from the
 environment and an optional repo-root `.env` file. See `.env.example`:
-  * LITELLM_BASE_URL    OpenAI-compatible endpoint (default: homelab pikellm proxy)
-  * LITELLM_API_KEY     required; also read from OPENAI_API_KEY / LITELLM_GATEWAY_KEY
-  * PUBLICATIONS_MODEL  model id (default: deepseek-v4-pro-cloud)
+  * LLM_BASE_URL    OpenAI-compatible endpoint, include /v1 (default localhost:4000)
+  * LLM_API_KEY     required; also read from OPENAI_API_KEY
+  * LLM_MODEL       model id (default deepseek-v4-pro-cloud)
 
-`build_agent()` returns a pydantic-ai Agent pointed at the configured endpoint.
 Construct LLMSettings() only once you actually have model work to do, so a no-op
 run (e.g. autotag with nothing untagged) needs no key.
 """
 
 from __future__ import annotations
 
-from typing import Any
-
+import httpx
 from pydantic import AliasChoices, Field, HttpUrl, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-from pydantic_ai import Agent
-from pydantic_ai.models.openai import OpenAIChatModel
-from pydantic_ai.providers.openai import OpenAIProvider
 
 
 class LLMSettings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    litellm_base_url: HttpUrl = Field(default="http://127.0.0.1:4000/v1")
-    litellm_api_key: SecretStr = Field(
-        validation_alias=AliasChoices(
-            "LITELLM_API_KEY", "OPENAI_API_KEY", "LITELLM_GATEWAY_KEY",
-            "AUDIT_SKILLS_PIKELLM_KEY",
-        )
+    llm_base_url: HttpUrl = Field(
+        default="http://localhost:4000/v1",
+        validation_alias=AliasChoices("LLM_BASE_URL", "LITELLM_BASE_URL", "OPENAI_BASE_URL"),
+    )
+    llm_api_key: SecretStr = Field(
+        validation_alias=AliasChoices("LLM_API_KEY", "LITELLM_API_KEY", "OPENAI_API_KEY")
     )
     model: str = Field(
         default="deepseek-v4-pro-cloud",
-        validation_alias=AliasChoices("PUBLICATIONS_MODEL", "LITELLM_MODEL"),
+        validation_alias=AliasChoices("LLM_MODEL", "PUBLICATIONS_MODEL"),
     )
 
 
-def build_model(settings: LLMSettings) -> OpenAIChatModel:
-    return OpenAIChatModel(
-        settings.model,
-        provider=OpenAIProvider(
-            base_url=str(settings.litellm_base_url),
-            api_key=settings.litellm_api_key.get_secret_value(),
-        ),
+def chat(
+    settings: LLMSettings,
+    system: str,
+    user: str,
+    *,
+    max_tokens: int = 1024,
+    temperature: float = 0.3,
+    timeout: float = 120.0,
+) -> str:
+    """One chat completion; returns the assistant message content."""
+    url = str(settings.llm_base_url).rstrip("/") + "/chat/completions"
+    resp = httpx.post(
+        url,
+        headers={"Authorization": f"Bearer {settings.llm_api_key.get_secret_value()}"},
+        json={
+            "model": settings.model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+        },
+        timeout=timeout,
     )
-
-
-def build_agent(settings: LLMSettings, *, instructions: str, output_type: Any = str) -> Agent:
-    """A pydantic-ai Agent at the configured endpoint. output_type=str for free
-    text; pass a Pydantic model for validated structured output."""
-    return Agent(build_model(settings), instructions=instructions, output_type=output_type)
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"].strip()
