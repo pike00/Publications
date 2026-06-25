@@ -141,9 +141,21 @@ def _split_folder(name: str) -> tuple[str, str]:
     return "", name
 
 
+def _is_aux_pdf(stem: str) -> bool:
+    """Auxiliary PDFs that sit alongside the paper (raw PubMed printout, a
+    commentary). Never the canonical entry PDF."""
+    s = stem.lower()
+    return s in {"pubmed", "info", "esummary"} or "commentary" in s
+
+
 def find_pdf(folder: Path) -> Path | None:
-    pdfs = sorted(folder.glob("*.pdf"))
-    return pdfs[0] if pdfs else None
+    """The canonical PDF for an entry: the largest non-auxiliary PDF in the
+    folder (folders often also contain a small Pubmed.pdf or a commentary)."""
+    pdfs = list(folder.glob("*.pdf"))
+    if not pdfs:
+        return None
+    candidates = [p for p in pdfs if not _is_aux_pdf(p.stem)] or pdfs
+    return max(candidates, key=lambda p: (p.stat().st_size, p.name))
 
 
 def load_metadata(folder: Path) -> dict:
