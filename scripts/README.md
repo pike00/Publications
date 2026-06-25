@@ -16,7 +16,7 @@ stderr via `publib.py`. Run them through the `justfile` at the repo root.
 | `just cv` | `build_cv.py` | Render `build/publications.pdf` |
 | `just autotag` | `autotag.py` | Propose topic tags for untagged entries (LLM) |
 | `just summarize` | `summarize.py` | Draft plain-language summaries (LLM; run on a branch) |
-| `just hook` | `hook.py` | Draft a one-line headline hook per entry (LLM; run on a branch) |
+| `just hook` | `hook.py` | Draft a one-line headline hook per entry from the full paper PDF (LLM; run on a branch) |
 | `just check` | — | validate + readme drift + links/DOIs |
 
 `publib.py` (shared helpers) and `llm.py` (shared pydantic-ai client) are imported

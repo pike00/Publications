@@ -4,10 +4,14 @@
 # dependencies = ["pyyaml", "pydantic-settings", "pydantic-ai-slim[openai]"]
 # ///
 """Generate a one-line plain-language hook per entry via the LLM proxy
-(pydantic-ai, default deepseek-v4-pro-cloud) and store it in the metadata
-``hook`` field. The hook is the headline that leads each entry on the
-publications page: a single punchy sentence stating the finding or the stakes,
-not a "Researchers examined..." preamble (that is what ``summary`` is for).
+(pydantic-ai) and store it in the metadata ``hook`` field. The hook is the
+headline that leads each entry on the publications page: a single punchy
+sentence stating the finding or the stakes, not a "Researchers examined..."
+preamble (that is what ``summary`` is for).
+
+The hook is grounded in the FULL paper text (extracted from the folder's PDF via
+pdftotext), with the abstract kept as a clean anchor for the headline finding;
+it falls back to abstract, then summary, for entries with no PDF.
 
 These are LLM-drafted and MUST be reviewed: run this on a dedicated branch and
 open a PR. Idempotent (skips entries that already have a hook; --force to
@@ -17,12 +21,38 @@ each metadata.yml is preserved.
 
 import json
 import re
+import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
 import publib
 
 MAX_CHARS = 160  # keep in sync with schemas/metadata.schema.json ("hook" maxLength)
+FULLTEXT_CHARS = 80000  # cap of extracted PDF text fed to the model (~20k tokens)
+
+
+def fulltext(folder: Path) -> str:
+    """Extract the full paper text from the entry's PDF via pdftotext. Prefers
+    the named paper PDF over a bare ``Pubmed.pdf`` (which is only the abstract);
+    on multiple candidates picks the largest. Returns '' when there is no PDF or
+    extraction fails (caller falls back to abstract/summary)."""
+    pdfs = [p for p in folder.glob("*.pdf") if p.name.lower() != "pubmed.pdf"]
+    if not pdfs:
+        pdfs = list(folder.glob("*.pdf"))  # only a Pubmed.pdf -> use it
+    if not pdfs:
+        return ""
+    pdf = max(pdfs, key=lambda p: p.stat().st_size)
+    try:
+        out = subprocess.run(
+            ["pdftotext", "-q", "-nopgbrk", str(pdf), "-"],
+            capture_output=True, text=True, timeout=120,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return ""
+    text = re.sub(r"[ \t]+", " ", out.stdout)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
 def clean(text: str) -> str:
@@ -116,12 +146,30 @@ INSTRUCTIONS = (
 )
 
 
-def build_prompt(meta: dict) -> str:
+def build_prompt(entry) -> str:
+    """Ground the hook in the FULL paper text (authoritative) plus the abstract.
+    Source priority: the abstract and the matching full text are authoritative;
+    the plain-language summary is only a rough fallback and must NOT be preferred
+    over them (a summary can itself be a lossy paraphrase that softens or even
+    inverts the real finding). The full text PDF may be a conference proceedings
+    page bundling several unrelated abstracts, so the model is told to use only
+    the portion matching the title."""
+    meta = entry.metadata
     parts = [f"Title: {meta.get('title','')}", f"Journal: {meta.get('journal','')}"]
     if meta.get("abstract"):
-        parts.append(f"Abstract: {meta['abstract']}")
-    elif meta.get("summary"):
-        parts.append(f"Plain-language summary: {meta['summary']}")
+        parts.append(f"Abstract (authoritative): {meta['abstract']}")
+    ft = fulltext(entry.folder)
+    if ft:
+        parts.append(
+            "Full paper text, extracted from the folder PDF (authoritative for the "
+            "exact numbers and direction of the finding). It MAY contain OCR noise "
+            "or, for posters, OTHER unrelated abstracts from the same proceedings "
+            "page: use ONLY the portion matching the Title above. Do not state a "
+            f"finding from an unrelated abstract.\n{ft[:FULLTEXT_CHARS]}")
+    if meta.get("summary"):
+        parts.append(
+            "Plain-language summary (rough fallback only; if it disagrees with the "
+            f"abstract or full text, trust those, not this): {meta['summary']}")
     return "\n\n".join(parts)
 
 
@@ -145,7 +193,7 @@ def main() -> None:
     model_settings = {"temperature": 0.2}
 
     def run(entry):
-        prompt = build_prompt(entry.metadata)
+        prompt = build_prompt(entry)
         text = clean(agent.run_sync(prompt, model_settings=model_settings).output)
         if BANNED_OPENER.match(text):  # one retry with an explicit nudge
             nudge = prompt + (
@@ -176,7 +224,11 @@ def main() -> None:
             # so every entry still gets a draft hook (run on a branch, reviewed).
             if BANNED_OPENER.match(text):
                 log.warn("formulaic_hook", entry=rel, text=text)
-            source = entry.metadata.get("abstract") or entry.metadata.get("summary") or ""
+            source = " ".join(filter(None, [
+                entry.metadata.get("abstract", ""),
+                entry.metadata.get("summary", ""),
+                fulltext(entry.folder),
+            ]))
             bad_nums = unsourced_numbers(text, source)
             if bad_nums:
                 log.warn("number_not_in_source", entry=rel, numbers=bad_nums, text=text)
