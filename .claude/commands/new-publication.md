@@ -108,11 +108,15 @@ Then create the folder.
 
 Write a `metadata.yml` file in the new folder using the extracted metadata fields. The file must conform to `schemas/metadata.schema.json`. Include these fields:
 
-**Required:** `title` (strip trailing period), `authors` (list in "Last Initials" format), `journal` (full name from FullJournalName), `date_published` (ISO 8601 YYYY-MM-DD; use 1st of month if day unknown)
+**Required:** `title` (strip trailing period), `authors` (see Author format below), `journal` (full name from FullJournalName), `date_published` (ISO 8601 YYYY-MM-DD; use 1st of month if day unknown)
 
-**Recommended:** `doi`, `pub_type` (e.g., "Journal Article")
+**Recommended:** `doi`, `pub_type` (e.g., "Journal Article"), `tags` (see Tags below)
 
 **Optional:** `pmid` (integer), `pmc` (e.g., "PMC1234567"), `volume`, `issue`, `pages`, `journal_abbrev` (abbreviated name from Source field)
+
+**Author format (ALWAYS normalize):** initials-first surname, e.g. `CW Pike`, `ML Jackson` -- NOT surname-first (`Pike CW`). Will Pike is ALWAYS `CW Pike` (never `WC Pike`, never `Pike WC`). The personal-site build bolds the self-author by an exact match on `CW Pike`/`W Pike`, so any other spelling renders Will's name unbolded on the live site. Convert every name from CrossRef/PubMed to this form before writing.
+
+**Tags:** add a `tags` array (1-3 topic strings). This is the source of truth for the topic chips on the website -- an entry with no tags renders chip-less. Reuse the vocabulary already in the repo (Cardiology, Endocrinology, Neurology, Urology, Substance Use, Health Informatics, Hepatology, Psychiatry, Orthopedics, Gynecology, Critical Care, Infectious Disease, etc.). Propose tags from the title/journal and confirm with the user if unsure.
 
 Omit optional fields that are empty. For abstracts, ask if there is a poster/abstract ID and include it as `abstract_id`.
 
@@ -121,13 +125,14 @@ Use double-quoted strings in the YAML for consistency. Example:
 ```yaml
 "title": "Paper Title Here"
 "authors":
-- "Pike CW"
-- "Smith J"
+- "CW Pike"
+- "J Smith"
 "journal": "Journal of Example Medicine"
 "date_published": "2025-03-15"
 "doi": "10.1234/example"
 "pub_type": "Journal Article"
 "pmid": 12345678
+"tags": ["Cardiology", "Health Informatics"]
 ```
 
 Delete the temporary `/tmp/info.xml` after extracting metadata -- it is not saved to the folder.

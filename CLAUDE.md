@@ -32,10 +32,23 @@ Only when no entry exists: create `Publications/NNN Short Title/` where NNN =
 
 ## Metadata
 
-`metadata.yml` must validate against `schemas/metadata.schema.json`. Author format is
-initials-first surname (e.g. `CW Pike`, `ML Jackson`). 2026+ papers are often not yet in
-PubMed - fall back to CrossRef (`https://api.crossref.org/works/<doi>`) and omit
-`pmid`/`pmc`.
+`metadata.yml` must validate against `schemas/metadata.schema.json`.
+
+**Author format (ALWAYS normalize):** initials-first surname, e.g. `CW Pike`, `ML Jackson` -
+NOT surname-first (`Pike CW`). Will Pike is ALWAYS `CW Pike` (never `WC Pike`, never `Pike WC`).
+The personal-site build bolds the self-author by an exact match on `CW Pike`/`W Pike`
+(`src/lib/authors.ts`), so any other spelling renders Will's name unbolded. Convert every name
+pulled from CrossRef/PubMed to this form before writing the entry.
+
+**Tags (source of truth lives here):** the `tags` field (array of strings) drives the topic
+chips on the website. Pick 1-3 from the vocabulary already used across the repo - Cardiology,
+Endocrinology, Neurology, Urology, Substance Use, Health Informatics, Hepatology, Psychiatry,
+Orthopedics, Gynecology, Critical Care, Infectious Disease, etc. An entry with no `tags` renders
+chip-less. (Tags used to live in personal-site at `src/content/publication-tags.yaml`; that file
+is retired - the metadata `tags` field is now the only source.)
+
+2026+ papers are often not yet in PubMed - fall back to CrossRef
+(`https://api.crossref.org/works/<doi>`) and omit `pmid`/`pmc`.
 
 ## Updating the live site (deployment)
 

@@ -18,6 +18,7 @@
     "issue":          { "type": "string" },
     "pages":          { "type": "string" },
     "journal_abbrev": { "type": "string" },
+    "tags":           { "type": "array", "items": { "type": "string", "minLength": 1 } },
     "abstract_id":    { "type": "string" }
   }
 }
