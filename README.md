@@ -31,6 +31,7 @@ This repository is a complete list of all publications and abstracts that I have
 - [Statin use is associated with lower rates of stricture development in patients with Crohn's disease: a propensity score-matched study of two nationwide population databases](<Publications/023 Statin Use and Crohns Disease Stricture/Statin use is associated with lower rates of stricture development in patients with Crohns disease.pdf>)
 - [Answering real-world clinical questions using large language model, retrieval-augmented generation, and agentic systems](<Publications/024 Answering Clinical Questions with LLM/Answering real-world clinical questions using large language model retrieval-augmented generation and agentic systems.pdf>)
 - [Real-World Evidence Assessment of the Risk of Non-fatal Stroke in Patients Prescribed SGLT2 Inhibitors](<Publications/025 SGLT2 Stroke Risk/Real-World Evidence Assessment of the Risk of Non-fatal Stroke in Patients Prescribed SGLT2 Inhibitors.pdf>)
+- [Gender-affirming hormone therapy and liver diseases: a cohort study](<Publications/253 Gender-affirming hormone therapy and liver diseases/Gender-affirming hormone therapy and liver diseases.pdf>)
 
 ## Abstracts, Posters, and Presentations
 
