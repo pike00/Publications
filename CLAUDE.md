@@ -53,10 +53,12 @@ is retired - the metadata `tags` field is now the only source.)
 
 ## Scripts and conventions
 
-`metadata.yml` is the single source of truth: `README.md` is a build artifact
-(`just readme`), and `just check` (validate + README drift + DOI/link resolution)
-gates the pre-push hook (`just hooks`) and CI. Full recipe list and config in
-[scripts/README.md](scripts/README.md). Conventions for anything added here:
+`metadata.yml` is the source of truth for published entries. `work-in-progress.yml`
+tracks manuscripts still in progress; it stores citation details only, not draft
+files. The website build does not read this manifest. `README.md` is a generated
+index (`just readme`), and `just check` (validate + README drift + DOI/link
+resolution) gates the pre-push hook (`just hooks`) and CI. Full recipe list and
+config in [scripts/README.md](scripts/README.md). Conventions for anything added here:
 
 - **`uv` inline-script scripts**, `requires-python >= 3.14`; run via `uv run` / `just`.
 - **Direct HTTP through `httpx`**, never `requests`/`urllib`; **LLM calls through
